@@ -1,11 +1,10 @@
 import * as React from "react";
 import Layout from "../components/Layout";
-import home from "./home";
 
-export default function Home() {
+export default function Notfound() {
   return (
     <Layout>
-      <home></home>
+      <div>404だよおおおお</div>
     </Layout>
   );
 }
