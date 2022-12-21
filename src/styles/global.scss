@@ -1,9 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
+@import url("https://unpkg.com/ress/dist/ress.min.css");
 
 $font-stack: Helvetica, sans-serif;
-$primary-color: pink;
 
-body {
+$primary-color: #d5c6b9;
+
+$primary-bg-color: #fff;
+
+$primary-font-color: #3e3e3e;
+
+html {
   font: 100% $font-stack;
-  color: $primary-color;
+  color: $primary-font-color;
+  font-size: 62.5%;
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: $primary-font-color;
+  }
 }

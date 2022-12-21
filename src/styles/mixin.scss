@@ -1,3 +1,16 @@
+$color-red: red;
+$color-blue: blue;
+$color-green: green;
+
+$primary-color: #d5c6b9;
+$secondary-color: #fdf7f2;
+$accent-color: #dca0a2;
+
+$primary-bg-color: #fff;
+$secondary-bg-color: #fbf6f4;
+
+$primary-font-color: #3e3e3e;
+
 @mixin tablet {
   @media only screen and (min-width: 768px) {
     @content;
@@ -10,4 +23,23 @@
   }
 }
 
-$color-red: red;
+//Layout
+@mixin flexLayout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin textStyles($transform: uppercase) {
+  letter-spacing: -0.05em;
+  text-transform: $transform;
+}
+
+@mixin centering($topValue) {
+  position: absolute;
+  top: $topValue;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//mixinでボタン作ると楽かも

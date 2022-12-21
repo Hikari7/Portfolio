@@ -1,0 +1,32 @@
+@use "../styles/mixin.scss" as mixin;
+
+.layout {
+  width: 100%;
+  display: flex;
+//   list-style: none;
+  padding: 16px;
+}
+.layout_ul {
+  width: 80%;
+  display: flex;
+//   list-style: none;
+  // text-decoration: none;
+}
+
+.outline {
+  outline: red solid 1px;
+
+  @include mixin.tablet {
+    outline: solid 1px mixin.$color-blue;
+  }
+
+  @include mixin.desktop {
+    outline: solid 1px mixin.$color-green;
+  }
+}
+
+.reset {
+  
+  color: inherit;
+  background-color: mixin.$accent-color;
+}

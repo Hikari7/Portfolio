@@ -6,7 +6,7 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
   align-items: center;
-  font-family: 'Forum', cursive;
+  font-family: "Forum", cursive;
 }
 
 .test h2 {
@@ -17,12 +17,13 @@
   font-weight: 400;
   margin-bottom: 20px;
 }
+
 .btn {
   display: inline-block;
   // mixinをここで呼び出すことができる
-  background: pink;
+  background: mixin.$accent-color;
   @include mixin.tablet {
-    background: mixin.$color-red;
+    background: mixin.$accent-color;
   }
   padding: 10px 16px;
   border-radius: 10px;
