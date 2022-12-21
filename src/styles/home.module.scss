@@ -1,0 +1,31 @@
+// mixinをここで読み込む
+@use "../styles/mixin.scss" as mixin;
+
+.test {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  align-items: center;
+  font-family: 'Forum', cursive;
+}
+
+.test h2 {
+  font-size: 4em;
+}
+.test h3 {
+  font-size: 3em;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.btn {
+  display: inline-block;
+  // mixinをここで呼び出すことができる
+  background: pink;
+  @include mixin.tablet {
+    background: mixin.$color-red;
+  }
+  padding: 10px 16px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-weight: 500;
+}

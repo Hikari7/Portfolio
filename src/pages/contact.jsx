@@ -1,7 +1,13 @@
 import React from "react";
+// import "../styles/contact.module.scss"
+import { test } from "../styles/contact.module.scss";
 
 const contact = () => {
-  return <div>Text meeeeee give me a jobbbbbb</div>;
+  return (
+    <>
+      <di className={test}>Text meeeeee give me a jobbbbbb</di>;
+    </>
+  );
 };
 
 export default contact;
