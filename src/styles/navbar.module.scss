@@ -1,16 +1,40 @@
 @use "../styles/mixin.scss" as mixin;
 
-.layout {
+.div {
   width: 100%;
-  display: flex;
-//   list-style: none;
-  padding: 16px;
+  border-bottom: 0.8px solid mixin.$primary-font-color;
 }
-.layout_ul {
+
+.header {
+  @include mixin.flexLayout;
   width: 80%;
   display: flex;
-//   list-style: none;
-  // text-decoration: none;
+  margin: 0 auto;
+  padding: 16px;
+  justify-content: space-between;
+  font-size: mixin.$font-size-h2;
+}
+.ul {
+  align-items: center;
+  display: flex;
+  //   height: 5rem;
+}
+
+.li {
+  margin-left: 1.6rem;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  padding-bottom: 0;
+  &:hover {
+    opacity: 0.8;
+    transition: 0.35s ease;
+  }
+}
+
+.btn {
+  @include mixin.mainBtn;
+  height: 100%;
 }
 
 .outline {
@@ -23,10 +47,4 @@
   @include mixin.desktop {
     outline: solid 1px mixin.$color-green;
   }
-}
-
-.reset {
-  
-  color: inherit;
-  background-color: mixin.$accent-color;
 }

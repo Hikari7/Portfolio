@@ -2,15 +2,13 @@
 @import url("https://unpkg.com/ress/dist/ress.min.css");
 
 $font-stack: Helvetica, sans-serif;
-
 $primary-color: #d5c6b9;
-
 $primary-bg-color: #fff;
-
 $primary-font-color: #3e3e3e;
 
 html {
-  font: 100% $font-stack;
+  // font: 100% $font-stack;
+  font-family: 100% $font-stack;
   color: $primary-font-color;
   font-size: 62.5%;
 
@@ -21,5 +19,9 @@ html {
   a {
     text-decoration: none;
     color: $primary-font-color;
+  }
+
+  body {
+    font-size: 1.2em;
   }
 }

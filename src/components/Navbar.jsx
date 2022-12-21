@@ -2,39 +2,36 @@ import { Link } from "gatsby";
 import React from "react";
 import {
   outline,
-  layout,
-  bg,
-  layout_ul,
-  reset,
+  header,
+  div,
+  ul,
+  li,
+  btn,
 } from "../styles/navbar.module.scss";
-// import {  reset } from "../styles/mixin.scss";
 
 const Navbar = () => {
   return (
-    <nav className={`${outline} ${layout}`}>
-      <h1>
-        <Link to="/" className={reset}>
-          HK
-        </Link>
-      </h1>
-      <ul className={layout_ul}>
-        <li>
-          <Link to="/" className={reset}>
-            HK
-          </Link>
-        </li>
-        <li>
-          <Link to="/about" className={reset}>
-            About
-          </Link>
-        </li>
-        <li>
-          <Link to="/works" className={reset}>
-            Works
-          </Link>
-        </li>
-      </ul>
-    </nav>
+    <div className={div}>
+      <nav className={`${outline} ${header}`}>
+        <h1>
+          <Link to="/">HK</Link>
+        </h1>
+        <ul className={ul}>
+          <li className={li}>
+            <Link to="/about">About</Link>
+          </li>
+          <li className={li}>
+            <Link to="/works">Works</Link>
+          </li>
+          <li className={li}>
+            <Link to="/contact">Contact</Link>
+          </li>
+          <button className={`${li} ${btn}`}>
+            <Link to="/">Resume</Link>
+          </button>
+        </ul>
+      </nav>
+    </div>
   );
 };
 
