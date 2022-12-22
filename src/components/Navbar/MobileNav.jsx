@@ -5,14 +5,13 @@ import { Link } from "gatsby";
 import React, { useState } from "react";
 import {
   mobileNav,
-  open,
   close,
   mobileBg,
   ul,
   li,
   btn,
   header,
-} from "../../styles/mobilenav.module.scss";
+} from "./mobilenav.module.scss";
 import { CgMenu } from "@react-icons/all-files/cg/CgMenu";
 import { CgClose } from "@react-icons/all-files/cg/CgClose";
 import { motion } from "framer-motion";
@@ -47,12 +46,66 @@ const MobileNav = () => {
           <Link to="/">HK</Link>
         </h1>
 
-        {open ? closeIcon : openIcon}
+        {open ? (
+          <motion.div
+            // className={mobileBg}
+            // initial={{ y: 0, opacity: 1 }}
+            // animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            {openIcon}
+          </motion.div>
+        ) : (
+          <motion.div
+            className={mobileBg}
+            // initial={{ y: 0, opacity: 1 }}
+            // animate={{ y: -50, opacity: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <ul className={ul}>
+              {closeIcon}
+              <motion.li
+                className={li}
+                initial={animateFrom}
+                animate={animateTo}
+                transition={{ delay: 0.15 }}
+              >
+                <Link to="/about">About</Link>
+              </motion.li>
+              <motion.li
+                className={li}
+                initial={animateFrom}
+                animate={animateTo}
+                transition={{ delay: 0.2 }}
+              >
+                <Link to="/works">Works</Link>
+              </motion.li>
+              <motion.li
+                className={li}
+                initial={animateFrom}
+                animate={animateTo}
+                transition={{ delay: 0.3 }}
+              >
+                <Link to="/contact">Contact</Link>
+              </motion.li>
+              <motion.button
+                className={`${li} ${btn}`}
+                initial={animateFrom}
+                animate={animateTo}
+                transition={{ delay: 0.45 }}
+              >
+                <Link to="/">Resume</Link>
+              </motion.button>
+            </ul>
+          </motion.div>
+        )}
+
+        {/* {open ? closeIcon : openIcon}
 
         {open && (
           <motion.div
             className={mobileBg}
-            initial={{ y: -300, opacity: 0 }}
+            initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
@@ -90,8 +143,8 @@ const MobileNav = () => {
                 <Link to="/">Resume</Link>
               </motion.button>
             </ul>
-          </motion.div>
-        )}
+          </motion.div> */}
+        {/* )} */}
       </nav>
     </>
   );

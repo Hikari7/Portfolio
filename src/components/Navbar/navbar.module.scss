@@ -1,15 +1,13 @@
-@use "../styles/mixin.scss" as mixin;
-
-.div {
-  width: 100%;
-  border-bottom: 0.8px solid mixin.$primary-font-color;
-}
+@use "../../styles/mixin.scss" as mixin;
 
 .header {
+  width: 100%;
+  border-bottom: 0.8px solid mixin.$primary-font-color;
   @include mixin.flexLayout;
-  width: 80%;
+  width: 100%;
   display: flex;
   margin: 0 auto;
+  padding: 16px;
   justify-content: space-between;
   font-size: mixin.$font-size-h2;
 }
@@ -33,11 +31,4 @@
 .btn {
   @include mixin.mainBtn;
   height: 100%;
-}
-
-.displayNav {
-  display: none;
-  @include mixin.tablet {
-    display: flex;
-  }
 }

@@ -2,15 +2,14 @@
 
 import React from "react";
 import { Link } from "gatsby";
-import { ul, li, btn } from "../../styles/navbar.module.scss";
-import {
-  displayNav,
-  outline,
-  header,
-} from "../../styles/displaynav.module.scss";
+import { ul, li, btn } from "./navbar.module.scss";
+import { displayNav, outline, header } from "./displaynav.module.scss";
 
 const DisplayNav = () => {
+  
+
   return (
+    
     <>
       <nav className={`${outline} ${header} ${displayNav}`}>
         <h1>
