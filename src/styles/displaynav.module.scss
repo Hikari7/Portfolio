@@ -10,7 +10,6 @@
   width: 80%;
   display: flex;
   margin: 0 auto;
-  padding: 16px;
   justify-content: space-between;
   font-size: mixin.$font-size-h2;
 }
@@ -34,18 +33,6 @@
 .btn {
   @include mixin.mainBtn;
   height: 100%;
-}
-
-.outline {
-  outline: red solid 1px;
-
-  @include mixin.tablet {
-    outline: solid 1px mixin.$color-blue;
-  }
-
-  @include mixin.desktop {
-    outline: solid 1px mixin.$color-green;
-  }
 }
 
 .displayNav {

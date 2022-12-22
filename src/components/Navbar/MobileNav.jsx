@@ -4,43 +4,94 @@
 import { Link } from "gatsby";
 import React, { useState } from "react";
 import {
-  outline,
-  header,
-  div,
+  mobileNav,
+  open,
+  close,
+  mobileBg,
   ul,
   li,
   btn,
-} from "../../styles/navbar.module.scss";
-import { mobileNav, hamburger } from "../../styles/mobilenav.module.scss";
-import { GiHamburgerMenu } from "@react-icons/all-files/gi/GiHamburgerMenu";
+  header,
+} from "../../styles/mobilenav.module.scss";
+import { CgMenu } from "@react-icons/all-files/cg/CgMenu";
+import { CgClose } from "@react-icons/all-files/cg/CgClose";
+import { motion } from "framer-motion";
 
 const MobileNav = () => {
+  const [open, setOpen] = useState(false);
+  const openIcon = (
+    <CgMenu
+      className={open}
+      size="32px"
+      color="#3e3e3e"
+      onClick={() => setOpen(!open)}
+    />
+  );
+
+  const closeIcon = (
+    <CgClose
+      className={close}
+      size="32px"
+      color="#3e3e3e"
+      onClick={() => setOpen(!open)}
+    />
+  );
+
+  const animateFrom = { opacity: 0, y: -40 };
+  const animateTo = { opacity: 1, y: 0 };
+
   return (
     <>
-      <nav className={`${outline} ${header} ${mobileNav}`}>
+      <nav className={`${header} ${mobileNav}`}>
         <h1>
           <Link to="/">HK</Link>
         </h1>
-        <GiHamburgerMenu
-          className={hamburger}
-          size="36px"
-          color="#3e3e3e"
-          onClick={() => console.log("clicked")}
-        />
-        <ul className={ul}>
-          <li className={li}>
-            <Link to="/about">About</Link>
-          </li>
-          <li className={li}>
-            <Link to="/works">Works</Link>
-          </li>
-          <li className={li}>
-            <Link to="/contact">Contact</Link>
-          </li>
-          <button className={`${li} ${btn}`}>
-            <Link to="/">Resume</Link>
-          </button>
-        </ul>
+
+        {open ? closeIcon : openIcon}
+
+        {open && (
+          <motion.div
+            className={mobileBg}
+            initial={{ y: -300, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <ul className={ul}>
+              <motion.li
+                className={li}
+                initial={animateFrom}
+                animate={animateTo}
+                transition={{ delay: 0.15 }}
+              >
+                <Link to="/about">About</Link>
+              </motion.li>
+              <motion.li
+                className={li}
+                initial={animateFrom}
+                animate={animateTo}
+                transition={{ delay: 0.2 }}
+              >
+                <Link to="/works">Works</Link>
+              </motion.li>
+              <motion.li
+                className={li}
+                initial={animateFrom}
+                animate={animateTo}
+                transition={{ delay: 0.3 }}
+              >
+                <Link to="/contact">Contact</Link>
+              </motion.li>
+              <motion.button
+                className={`${li} ${btn}`}
+                initial={animateFrom}
+                animate={animateTo}
+                transition={{ delay: 0.45 }}
+              >
+                <Link to="/">Resume</Link>
+              </motion.button>
+            </ul>
+          </motion.div>
+        )}
       </nav>
     </>
   );

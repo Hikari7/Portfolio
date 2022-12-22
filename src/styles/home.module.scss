@@ -1,13 +1,13 @@
 // mixinをここで読み込む
 @use "../styles/mixin.scss" as mixin;
 
-.test {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 40px;
-  align-items: center;
-  font-family: "Forum", cursive;
-}
+// .test {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   grid-gap: 40px;
+//   align-items: center;
+//   font-family: "Forum", cursive;
+// }
 
 .test h2 {
   font-size: 4em;

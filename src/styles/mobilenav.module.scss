@@ -1,12 +1,8 @@
 @use "../styles/mixin.scss" as mixin;
 
-.DisplayNav {
-  display: block;
-}
-
-.div {
-  width: 100%;
-  border-bottom: 0.8px solid mixin.$primary-font-color;
+.ul {
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -14,13 +10,8 @@
   width: 80%;
   display: flex;
   margin: 0 auto;
-  padding: 16px;
   justify-content: space-between;
   font-size: mixin.$font-size-h2;
-}
-.ul {
-  align-items: center;
-  display: flex;
 }
 
 .li {
@@ -37,36 +28,42 @@
 
 .btn {
   @include mixin.mainBtn;
-  height: 100%;
+  height: 20%;
+  // width: 120px;
+  // margin: 0 auto;
 }
 
-.outline {
-  outline: red solid 1px;
-
-  @include mixin.tablet {
-    outline: solid 1px mixin.$color-blue;
-  }
-
-  @include mixin.desktop {
-    outline: solid 1px mixin.$color-green;
-  }
-}
-
-// .displaynav {
-//   display: none;
-//   // @include mixin.tablet {
-//   //   display: flex;
-//   // }
-// }
 .mobileNav {
-  background-color: red;
   @include mixin.tablet {
     display: none;
   }
 }
 
-.hamburger {
+.open {
   position: absolute;
   right: 10%;
   cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  right: 10%;
+  cursor: pointer;
+}
+
+.mobileBg {
+  position: absolute;
+  background-color: mixin.$secondary-bg-color;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  height: 50%;
+}
+
+.ul {
+  padding: 30%;
+}
+
+.li {
+  margin-top: 24px;
 }

@@ -1,13 +1,11 @@
 @use "../styles/mixin.scss" as mixin;
 
-.div {
-  width: 100%;
-  border-bottom: 0.8px solid mixin.$primary-font-color;
-}
 
 .header {
+  width: 100%;
+  border-bottom: 0.8px solid mixin.$primary-font-color;
   @include mixin.flexLayout;
-  width: 80%;
+  width: 100%;
   display: flex;
   margin: 0 auto;
   padding: 16px;
@@ -35,17 +33,3 @@
   @include mixin.mainBtn;
   height: 100%;
 }
-
-.outline {
-  outline: red solid 1px;
-
-  @include mixin.tablet {
-    outline: solid 1px mixin.$color-blue;
-  }
-
-  @include mixin.desktop {
-    outline: solid 1px mixin.$color-green;
-  }
-}
-
-
