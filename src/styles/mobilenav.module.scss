@@ -1,5 +1,9 @@
 @use "../styles/mixin.scss" as mixin;
 
+.DisplayNav {
+  display: block;
+}
+
 .div {
   width: 100%;
   border-bottom: 0.8px solid mixin.$primary-font-color;
@@ -48,4 +52,21 @@
   }
 }
 
+// .displaynav {
+//   display: none;
+//   // @include mixin.tablet {
+//   //   display: flex;
+//   // }
+// }
+.mobileNav {
+  background-color: red;
+  @include mixin.tablet {
+    display: none;
+  }
+}
 
+.hamburger {
+  position: absolute;
+  right: 10%;
+  cursor: pointer;
+}

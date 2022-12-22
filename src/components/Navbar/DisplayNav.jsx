@@ -1,21 +1,22 @@
-import { Link } from "gatsby";
+//タブレットサイズ
+
 import React from "react";
+import { Link } from "gatsby";
+import { ul, li, btn } from "../../styles/navbar.module.scss";
 import {
+  displayNav,
   outline,
   header,
-  div,
-  ul,
-  li,
-  btn,
-} from "../styles/navbar.module.scss";
+} from "../../styles/displaynav.module.scss";
 
-const Navbar = () => {
+const DisplayNav = () => {
   return (
-    <div className={div}>
-      <nav className={`${outline} ${header}`}>
+    <>
+      <nav className={`${outline} ${header} ${displayNav}`}>
         <h1>
           <Link to="/">HK</Link>
         </h1>
+
         <ul className={ul}>
           <li className={li}>
             <Link to="/about">About</Link>
@@ -31,8 +32,8 @@ const Navbar = () => {
           </button>
         </ul>
       </nav>
-    </div>
+    </>
   );
 };
 
-export default Navbar;
+export default DisplayNav;

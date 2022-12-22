@@ -48,4 +48,9 @@
   }
 }
 
-
+.displayNav {
+  display: none;
+  @include mixin.tablet {
+    display: flex;
+  }
+}
