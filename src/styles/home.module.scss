@@ -35,7 +35,7 @@
   @include mixin.tablet {
     top: 20%;
     left: 35%;
-    transform: translateX(-50%);
+    // transform: translateX(-50%);
   }
   @include mixin.desktop {
     top: 25%;
@@ -71,7 +71,7 @@
     display: inline-block;
     position: absolute;
     top: 20%;
-    right: 15%;
+    right: 20%;
     border-radius: 50%;
   }
 
@@ -82,9 +82,6 @@
       height: 380px;
       display: inline-block;
       position: absolute;
-      // top: 20%;
-      // right: 15%;
-      // border-radius: 50%;
     }
   }
 }

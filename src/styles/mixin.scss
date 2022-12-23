@@ -9,15 +9,15 @@ $accent-color: #dca0a2;
 
 $primary-bg-color: #fff;
 $secondary-bg-color: #fbf6f4;
-$accent-bg-color: #DDCEC0;
+$accent-bg-color: #ddcec0;
 
 $primary-font-color: #3e3e3e;
 
 //font-size
 
-$font-size-h1: 2.8rem;
-$font-size-h2: 2.3rem;
-$font-size-p: 1.3rem;
+$font-size-h1: 4.2rem;
+$font-size-h2: 2.4rem;
+$font-size-p: 1.8rem;
 
 @mixin tablet {
   @media only screen and (min-width: 768px) {

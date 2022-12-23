@@ -1,0 +1,47 @@
+@use "../../styles/mixin.scss" as mixin;
+
+.title {
+  justify-content: center;
+  width: 80%;
+  text-align: center;
+  margin: 16px auto;
+}
+
+.h1,
+.h2 {
+  padding: 16px;
+}
+
+.h1 {
+  font-size: mixin.$font-size-h1;
+}
+
+.h2 {
+  font-size: mixin.$font-size-h2;
+}
+
+///////////////////////////////
+
+.container {
+  width: 80%;
+  //   outline: 1px red solid;
+  margin: 0 auto;
+}
+
+.workImg {
+  width: 100%;
+  height: 420px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.workDetail {
+  width: 100%;
+  height: 420px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.backgroundColor {
+  background-color: black;
+}

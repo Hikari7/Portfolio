@@ -11,6 +11,7 @@ import {
   mainWrapper,
 } from "../styles/home.module.scss";
 import portfolio from "../images/portfolio.jpg";
+import Works from "./Works";
 
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
           </div>
         </main>
       </div>
+      <Works />
     </Layout>
   );
 }
