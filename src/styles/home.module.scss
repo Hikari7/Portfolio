@@ -1,32 +1,94 @@
 // mixinをここで読み込む
 @use "../styles/mixin.scss" as mixin;
 
-// .test {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   grid-gap: 40px;
-//   align-items: center;
-//   font-family: "Forum", cursive;
-// }
-
-.test h2 {
-  font-size: 4em;
+.bg {
+  height: 90vh;
+  // background-color: mixin.$secondary-bg-color;
+  // clip-path: polygon(100% 0, 100% 73%, 16% 96%, 0 100%, 0 0);
 }
-.test h3 {
-  font-size: 3em;
+
+.main {
+  z-index: -1;
+  background-color: mixin.$secondary-bg-color;
+  clip-path: polygon(100% 0, 100% 73%, 16% 96%, 0 100%, 0 0);
+  height: 100%;
+
+  position: relative;
+  .mainBg {
+    height: 100%;
+    display: none;
+    background-color: mixin.$accent-bg-color;
+    clip-path: polygon(100% 0, 100% 73%, 16% 96%, 48% 88%, 75% 0);
+    @include mixin.tablet {
+      display: block;
+    }
+  }
+}
+
+.mainText {
+  @include mixin.textStyles;
+  z-index: 3;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  @include mixin.tablet {
+    top: 20%;
+    left: 35%;
+    transform: translateX(-50%);
+  }
+  @include mixin.desktop {
+    top: 25%;
+  }
+}
+.mainText h1 {
+  font-size: 6.5rem;
+  @include mixin.tablet {
+    font-size: 8rem;
+  }
+}
+.mainText h2 {
+  font-size: 4.5rem;
   font-weight: 400;
-  margin-bottom: 20px;
 }
 
 .btn {
+  font-size: 2.5rem;
   display: inline-block;
-  // mixinをここで呼び出すことができる
+  justify-content: center;
   background: mixin.$accent-color;
-  @include mixin.tablet {
-    background: mixin.$accent-color;
-  }
   padding: 10px 16px;
   border-radius: 10px;
   margin-top: 20px;
   font-weight: 500;
+}
+
+.img {
+  display: none;
+  @include mixin.desktop {
+    width: 330px;
+    height: 350px;
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    border-radius: 50%;
+  }
+
+  .imgBg {
+    display: none;
+    @include mixin.desktop {
+      width: 350px;
+      height: 380px;
+      display: inline-block;
+      position: absolute;
+      // top: 20%;
+      // right: 15%;
+      // border-radius: 50%;
+    }
+  }
+}
+
+.mainWrapper {
+  width: 40%;
 }
