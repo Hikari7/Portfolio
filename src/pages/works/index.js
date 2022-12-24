@@ -8,11 +8,11 @@ import {
   cardWrapper,
 } from "./index.module.scss";
 // import Cardinfo from "./Cardinfo";
-import workoutLog from "../../images/workout-tracker.png";
-import sleepTight from "../../images/sleep-tight.png";
-import cookHelper from "../../images/cooking-helper.png";
-import oatmealEcSite from "../../images/oatmeal-ecsite.png";
-import commitFit from "../../images/commit-fit.png";
+import workoutLog from "../../images/workout-tracker.jpg";
+import sleepTight from "../../images/sleep-tight.jpg";
+import cookHelper from "../../images/cooking-helper.jpg";
+import oatmealEcSite from "../../images/oatmeal-ecsite.jpg";
+import commitFit from "../../images/commit-fit.jpg";
 
 const Works = () => {
   const [showInfo, setShowInfo] = useState(false);
