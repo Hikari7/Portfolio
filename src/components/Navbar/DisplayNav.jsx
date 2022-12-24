@@ -23,6 +23,9 @@ const DisplayNav = () => {
           <li className={li}>
             <Link to="/contact">Contact</Link>
           </li>
+          <li className={li}>
+            <Link to="/skills">Skills</Link>
+          </li>
           <button className={`${li} ${btn}`}>
             <Link to="/">Resume</Link>
           </button>

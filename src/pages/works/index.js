@@ -4,17 +4,25 @@ import {
   h1,
   h2,
   container,
-  card,
   workImg,
   workDetail,
-  backgroundColor,
+  cardWrapper,
 } from "./index.module.scss";
-import workoutLog from "../../images/workout_tracker.jpg";
+import Cardinfo from "./Cardinfo";
+import workoutLog from "../../images/workout-tracker.png";
+import sleepTight from "../../images/sleep-tight.png";
+import cookHelper from "../../images/cooking-helper.png";
+import oatmealEcSite from "../../images/oatmeal-ecsite.png";
+import commitFit from "../../images/commit-fit.png";
 
 const Works = () => {
-  const [show, setShow] = useState(false);
+  const [showInfo, setShowInfo] = useState(false);
 
-  // function showInfo() {}
+  // const handleInfo = () => {
+  //   <dsiv className={{ workDetail }}></dsiv>;
+  // };
+
+  console.log(showInfo);
 
   return (
     <>
@@ -23,20 +31,62 @@ const Works = () => {
         <h2 className={h2}>Hover over any project to learn more</h2>
       </div>
 
-      <ul className={container}>
-        {/* <li className={card} onClick={() => showInfo()}> */}
-        <li className={card} onClick={() => setShow(!show)}>
-          {show ? (
-            <img src={workoutLog} alt="workoutLog" className={workImg} />
-          ) : (
-            <div className={backgroundColor}>
-              {/* <img src={workoutLog} alt="workoutLog" className={workDetail} /> */}
-            </div>
-          )}
-        </li>
-      </ul>
+      <div className={container}>
+        <div className={cardWrapper}>
+          <img
+            src={workoutLog}
+            className={workImg}
+            alt="workoutLog"
+            // onMouseEnter={() => setShowInfo(true)}
+            // onMouseLeave={() => setShowInfo(false)}
+            onMouseOver={() => setShowInfo(!showInfo)}
+            // onMouseOut={handleImg}
+          />
+        </div>
+        <div className={cardWrapper}>
+          <img
+            src={sleepTight}
+            className={workImg}
+            alt="sleepTight"
+            onMouseOver={() => setShowInfo(!showInfo)}
+          />
+        </div>
+        <div className={cardWrapper}>
+          <img
+            src={cookHelper}
+            className={workImg}
+            alt="cookHelper"
+            onMouseOver={() => setShowInfo(!showInfo)}
+          />
+        </div>
+        <div className={cardWrapper}>
+          <img
+            src={oatmealEcSite}
+            className={workImg}
+            alt="oatmealEcSite"
+            onMouseOver={() => setShowInfo(!showInfo)}
+          />
+        </div>
+        <div className={cardWrapper}>
+          <img
+            src={commitFit}
+            className={workImg}
+            alt="oatmealEcSite"
+            onMouseOver={() => setShowInfo(!showInfo)}
+          />
+        </div>
+      </div>
     </>
   );
 };
 
 export default Works;
+{
+  /* {showInfo && <div className={{ workDetail }}>weqewqeqwe</div>} */
+}
+{
+  /* {showInfo && <Cardinfo img={workoutLog} />} */
+}
+{
+  /* {!showInfo && {}} */
+}

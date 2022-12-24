@@ -88,6 +88,14 @@ const MobileNav = () => {
               >
                 <Link to="/contact">Contact</Link>
               </motion.li>
+              <motion.li
+                className={li}
+                initial={animateFrom}
+                animate={animateTo}
+                transition={{ delay: 0.3 }}
+              >
+                <Link to="/skills">Skills</Link>
+              </motion.li>
               <motion.button
                 className={`${li} ${btn}`}
                 initial={animateFrom}
