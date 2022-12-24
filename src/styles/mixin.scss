@@ -13,10 +13,13 @@ $accent-bg-color: #ddcec0;
 
 $primary-font-color: #3e3e3e;
 
+$second-font-stack: "Karla", sans-serif;
+
 //font-size
 
 $font-size-h1: 4.2rem;
-$font-size-h2: 2.4rem;
+$font-size-h2: 3.6rem;
+$font-size-h3: 2.4rem;
 $font-size-p: 1.8rem;
 
 @mixin tablet {
@@ -39,7 +42,8 @@ $font-size-p: 1.8rem;
 }
 
 @mixin textStyles($transform: capitalize) {
-  letter-spacing: -0.05em;
+  letter-spacing: 0.05em;
+  line-height: 1.7;
   text-transform: $transform;
 }
 

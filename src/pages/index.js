@@ -12,6 +12,7 @@ import {
 } from "../styles/home.module.scss";
 import portfolio from "../images/portfolio.jpg";
 import Works from "./Works";
+import About from "./about";
 
 export default function Home() {
   return (
@@ -38,6 +39,7 @@ export default function Home() {
         </main>
       </div>
       <Works />
+      <About />
     </Layout>
   );
 }

@@ -1,7 +1,12 @@
+@use "./mixin.scss";
 @import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
 @import url("https://unpkg.com/ress/dist/ress.min.css");
 
-$font-stack: Helvetica, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
+
+$font-stack: "Forum", cursive;
+$second-font-stack: "Karla", sans-serif;
+
 $primary-color: #d5c6b9;
 $primary-bg-color: #fff;
 $primary-font-color: #3e3e3e;
@@ -12,8 +17,14 @@ html {
   color: $primary-font-color;
   font-size: 62.5%;
 
+  p {
+    @include mixin.textStyles;
+    // font-family: $second-font-stack;
+  }
+
   li {
     list-style: none;
+    // font-family: $second-font-stack;
   }
 
   a {

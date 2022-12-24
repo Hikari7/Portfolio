@@ -5,7 +5,7 @@ import {
   h2,
   container,
   workImg,
-  workDetail,
+  h3,
   cardWrapper,
 } from "./index.module.scss";
 import Cardinfo from "./Cardinfo";
@@ -28,7 +28,7 @@ const Works = () => {
     <>
       <div className={title}>
         <h1 className={h1}>Works</h1>
-        <h2 className={h2}>Hover over any project to learn more</h2>
+        <h2 className={h3}>Hover over any project to learn more</h2>
       </div>
 
       <div className={container}>

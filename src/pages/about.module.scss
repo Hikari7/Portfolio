@@ -1,0 +1,129 @@
+@use "../styles/mixin.scss" as mixin;
+
+.title {
+  justify-content: center;
+  width: 80%;
+  text-align: center;
+  margin: 36px auto;
+}
+
+.h1 {
+  padding: 16px;
+}
+
+.h1 {
+  font-size: mixin.$font-size-h1;
+}
+
+.container {
+  background-color: mixin.$secondary-bg-color;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+/////////////////
+
+.main {
+  justify-content: center;
+  width: 75%;
+  text-align: center;
+  margin: 16px auto;
+  background-color: mixin.$accent-bg-color;
+  border-radius: 8px;
+  padding: 24px;
+
+  .h3 {
+    padding: 12px 0;
+    font-size: mixin.$font-size-h3;
+  }
+
+  .h2 {
+    padding: 6px 0;
+    font-size: mixin.$font-size-h2;
+    color: mixin.$secondary-color;
+  }
+}
+
+.detail {
+  justify-content: center;
+  width: 75%;
+  font-size: 1.8rem;
+  word-break: break-word;
+  margin: 24px auto;
+  @include mixin.textStyles(none);
+  font-family: mixin.$second-font-stack;
+
+  li {
+    list-style: square;
+
+    span {
+      background: linear-gradient(transparent 45%, #dca0a2a8 50%);
+    }
+  }
+
+  .tweet {
+    display: block;
+    text-align: center;
+    max-width: 400px;
+    justify-content: center;
+    margin: 24px auto;
+    padding: 24px;
+    animation: float 5s ease-in-out infinite;
+    @include mixin.textStyles(none);
+
+    @keyframes float {
+      0% {
+        transform: translateY(0%);
+      }
+      50% {
+        transform: translateY(36%);
+      }
+      100% {
+        transform: translateY(0%);
+      }
+    }
+
+    span {
+      background: linear-gradient(transparent 40%, #1da0f292 30%);
+    }
+  }
+}
+
+.socialMedia {
+  text-align: center;
+  margin: 24px auto;
+  width: 75%;
+  padding: 24px;
+  @include mixin.flexLayout;
+}
+.socialMedia li:nth-child(2) {
+  margin-left: 24px;
+}
+.socialMedia li:nth-child(3) {
+  margin-left: 24px;
+}
+.icon {
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+    transition: 0.35s ease;
+  }
+}
+
+.li {
+  text-align: center;
+  margin: 0 auto;
+
+  align-items: center;
+  font-size: mixin.$font-size-h3;
+  &:hover {
+    opacity: 0.8;
+    transition: 0.35s ease;
+  }
+}
+
+.btn {
+  @include mixin.mainBtn;
+  height: 100%;
+  margin-top: 24px;
+}
