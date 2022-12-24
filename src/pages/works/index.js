@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import {
   title,
   h1,
-  h2,
   container,
   workImg,
   h3,
   cardWrapper,
 } from "./index.module.scss";
-import Cardinfo from "./Cardinfo";
+// import Cardinfo from "./Cardinfo";
 import workoutLog from "../../images/workout-tracker.png";
 import sleepTight from "../../images/sleep-tight.png";
 import cookHelper from "../../images/cooking-helper.png";
@@ -81,12 +80,3 @@ const Works = () => {
 };
 
 export default Works;
-{
-  /* {showInfo && <div className={{ workDetail }}>weqewqeqwe</div>} */
-}
-{
-  /* {showInfo && <Cardinfo img={workoutLog} />} */
-}
-{
-  /* {!showInfo && {}} */
-}
