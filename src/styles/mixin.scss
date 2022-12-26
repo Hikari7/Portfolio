@@ -56,12 +56,15 @@ $font-size-p: 1.8rem;
 
 //mixinでボタン作ると楽かも
 @mixin mainBtn {
+  font-size: 1.6em;
+  @include textStyles;
   background-color: $accent-color;
   text-align: center;
   display: block;
-  border-radius: 8px;
-  padding: 8px 12px;
+  border-radius: 16px;
+  padding: 8px 16px;
   &:hover {
+    cursor: pointer;
     opacity: 0.8;
     transition: 0.35s ease;
   }

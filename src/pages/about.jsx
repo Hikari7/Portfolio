@@ -77,18 +77,18 @@ const about = () => {
         <div className={socialMedia}>
           <li>
             <a href="https://www.linkedin.com/in/hikari-kobe-106054242/">
-              <AiFillLinkedin size="32px" color="#3e3e3e" className={icon} />
+              <AiFillLinkedin size="40px" color="#3e3e3e" className={icon} />
             </a>
           </li>
           <li>
             <a href="https://github.com/Hikari7">
-              <AiFillGithub size="32px" color="#3e3e3e" className={icon} />
+              <AiFillGithub size="40px" color="#3e3e3e" className={icon} />
             </a>
           </li>
           <li>
             <a href="https://twitter.com/hk_Vancouver">
               <AiFillTwitterCircle
-                size="32px"
+                size="40px"
                 color="#3e3e3e"
                 className={icon}
               />

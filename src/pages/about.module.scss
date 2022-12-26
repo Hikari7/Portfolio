@@ -30,7 +30,7 @@
   margin: 16px auto;
   background-color: mixin.$accent-bg-color;
   border-radius: 8px;
-  padding: 24px;
+  // padding: 24px;
 
   .h3 {
     padding: 12px 0;
@@ -124,6 +124,5 @@
 
 .btn {
   @include mixin.mainBtn;
-  height: 100%;
   margin-top: 24px;
 }

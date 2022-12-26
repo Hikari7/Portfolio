@@ -17,38 +17,51 @@
 
 .container {
   background-color: mixin.$secondary-bg-color;
-  padding-top: 36px;
-
-  outline: 1px solid red;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  // outline: 1px solid red;
 }
 
 /////////////////
 
 .headline {
   justify-content: center;
-  width: 25%;
+  width: 120px;
   text-align: center;
-  margin: 36px auto;
-  background-color: mixin.$accent-bg-color;
+  margin: 36px auto 6px;
+  // background-color: mixin.$accent-bg-color;
   border-radius: 8px;
   padding: 12px 8px;
 
   @include mixin.textStyles;
   font-size: mixin.$font-size-p;
+
+}
+
+.headline .stripe{
+  width: 120px;
+  border-radius: 8px;
+  background: repeating-linear-gradient(
+    -45deg,
+    #ddcec0,
+    #ddcec0 2px,
+    white 2px,
+    white 4px
+  );
 }
 
 .wrapper {
   background-color: rgba(255, 255, 255, 0.812);
-  width: 80%;
+  width: 60%;
   justify-content: center;
-  margin: 24px auto;
+  margin: 0 auto;
   border-radius: 16px;
   padding: 2px 0;
 }
 .skillsList {
   @include mixin.flexLayout;
   padding: 0;
-  justify-content: space-between;
+  justify-content: center;
   width: 60%;
   margin: 0 auto;
   flex-wrap: wrap;
@@ -56,32 +69,12 @@
   li {
     margin-top: 24px;
     margin-left: 32px;
+    margin-right: 32px;
     text-align: center;
 
     p {
       padding: 6px 0;
       font-family: mixin.$second-font-stack;
     }
-  }
-}
-
-.socialMedia {
-  text-align: center;
-  margin: 24px auto;
-  width: 75%;
-  padding: 24px;
-  @include mixin.flexLayout;
-}
-.socialMedia li:nth-child(2) {
-  margin-left: 24px;
-}
-.socialMedia li:nth-child(3) {
-  margin-left: 24px;
-}
-.icon {
-  cursor: pointer;
-  &:hover {
-    opacity: 0.8;
-    transition: 0.35s ease;
   }
 }

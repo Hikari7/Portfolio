@@ -22,9 +22,11 @@
 
 .container {
   background-color: mixin.$secondary-bg-color;
-  padding-top: 32px;
-  padding-bottom: 32px;
-//   outline: 1px red solid;
+  // padding-top: 32px;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  // padding-bottom: 56px;
+  // outline: 1px red solid;
 }
 ///////////////////////////////
 
@@ -34,8 +36,11 @@
   width: 90%;
   margin: 0 auto;
   height: 400px;
-//   outline: 1px blue solid;
+  // outline: 1px blue solid;
   margin-top: 10%;
+  &:first-child{
+    margin-top: 0;
+  }
 }
 
 .workImg {

@@ -53,14 +53,15 @@
 }
 
 .btn {
-  font-size: 2.5rem;
-  display: inline-block;
-  justify-content: center;
-  background: mixin.$accent-color;
-  padding: 10px 16px;
-  border-radius: 10px;
-  margin-top: 20px;
-  font-weight: 500;
+  @include mixin.mainBtn;
+  // font-size: 2.5rem;
+  //   display: inline-block;
+  //   justify-content: center;
+  //   background: mixin.$accent-color;
+  //   padding: 10px 16px;
+  //   border-radius: 10px;
+  //   margin-top: 20px;
+  //   font-weight: 500;
 }
 
 .img {

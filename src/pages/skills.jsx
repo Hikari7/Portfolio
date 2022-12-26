@@ -6,6 +6,7 @@ import {
   wrapper,
   headline,
   skillsList,
+  stripe,
 } from "./skills.module.scss";
 import { AiFillHtml5 } from "@react-icons/all-files/ai/AiFillHtml5";
 import { DiCss3 } from "@react-icons/all-files/di/DiCss3";
@@ -37,7 +38,9 @@ const skills = () => {
       </div>
 
       <div className={container}>
-        <h3 className={headline}>Languages</h3>
+        <h3 className={headline}>
+          <p className={stripe}>Languages</p>
+        </h3>
         <div className={wrapper}>
           <ul className={skillsList}>
             <li>
@@ -63,7 +66,9 @@ const skills = () => {
           </ul>
         </div>
 
-        <h3 className={headline}>Front end</h3>
+        <h3 className={headline}>
+          <p className={stripe}>Front end</p>
+        </h3>
         <div className={wrapper}>
           <ul className={skillsList}>
             <li>
@@ -95,7 +100,9 @@ const skills = () => {
           </ul>
         </div>
 
-        <h3 className={headline}>Others</h3>
+        <h3 className={headline}>
+          <p className={stripe}>Others</p>
+        </h3>
         <div className={wrapper}>
           <ul className={skillsList}>
             <li>
