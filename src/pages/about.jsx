@@ -54,10 +54,16 @@ const about = () => {
           </li>
         </ul>
 
-        <div style={{ display: "flex", justifyContent: "center" }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
           <TwitterEmbed
             url="https://twitter.com/hk_Vancouver/status/1559786990794551297"
             width={400}
+            height={600}
           />
         </div>
         <div className={`${detail} ${tweet}`}>

@@ -66,8 +66,8 @@
     text-align: center;
     max-width: 400px;
     justify-content: center;
-    margin: 24px auto;
-    padding: 24px;
+    margin: 0px auto;
+    // padding: 24px;
     animation: float 5s ease-in-out infinite;
     @include mixin.textStyles(none);
 

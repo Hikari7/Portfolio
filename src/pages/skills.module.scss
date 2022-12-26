@@ -1,0 +1,87 @@
+@use "../styles/mixin.scss" as mixin;
+
+.title {
+  justify-content: center;
+  width: 80%;
+  text-align: center;
+  margin: 36px auto;
+}
+
+.h1 {
+  padding: 16px;
+}
+
+.h1 {
+  font-size: mixin.$font-size-h1;
+}
+
+.container {
+  background-color: mixin.$secondary-bg-color;
+  padding-top: 36px;
+
+  outline: 1px solid red;
+}
+
+/////////////////
+
+.headline {
+  justify-content: center;
+  width: 25%;
+  text-align: center;
+  margin: 36px auto;
+  background-color: mixin.$accent-bg-color;
+  border-radius: 8px;
+  padding: 12px 8px;
+
+  @include mixin.textStyles;
+  font-size: mixin.$font-size-p;
+}
+
+.wrapper {
+  background-color: rgba(255, 255, 255, 0.812);
+  width: 80%;
+  justify-content: center;
+  margin: 24px auto;
+  border-radius: 16px;
+  padding: 2px 0;
+}
+.skillsList {
+  @include mixin.flexLayout;
+  padding: 0;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+
+  li {
+    margin-top: 24px;
+    margin-left: 32px;
+    text-align: center;
+
+    p {
+      padding: 6px 0;
+      font-family: mixin.$second-font-stack;
+    }
+  }
+}
+
+.socialMedia {
+  text-align: center;
+  margin: 24px auto;
+  width: 75%;
+  padding: 24px;
+  @include mixin.flexLayout;
+}
+.socialMedia li:nth-child(2) {
+  margin-left: 24px;
+}
+.socialMedia li:nth-child(3) {
+  margin-left: 24px;
+}
+.icon {
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+    transition: 0.35s ease;
+  }
+}
