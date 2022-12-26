@@ -14,6 +14,7 @@ import portfolio from "../images/portfolio.jpg";
 import Works from "./Works";
 import About from "./about";
 import Skills from "./skills";
+import Contact from "./contact";
 
 export default function Home() {
   return (
@@ -42,6 +43,7 @@ export default function Home() {
       <Works />
       <About />
       <Skills />
+      <Contact />
     </Layout>
   );
 }

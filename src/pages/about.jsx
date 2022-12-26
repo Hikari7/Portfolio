@@ -3,7 +3,6 @@ import { Link } from "gatsby";
 import {
   title,
   h1,
-  h2,
   h3,
   container,
   main,
@@ -29,9 +28,8 @@ const about = () => {
       <div className={container}>
         <main className={main}>
           <p className={h3}>
-            A Front-End Developer <br></br>specialized React
+            A Front-End Developer <br></br>specialized <span>React</span>
           </p>
-          <p className={h2}>Hikari Kobe</p>
         </main>
         <ul className={detail}>
           <li>

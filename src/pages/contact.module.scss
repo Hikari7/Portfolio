@@ -1,0 +1,68 @@
+@use "../styles/mixin.scss" as mixin;
+
+.container {
+  height: 80vh;
+}
+
+.mainBg {
+  background-color: mixin.$accent-color;
+  clip-path: polygon(0 14%, 100% 32%, 100% 100%, 0% 100%);
+  height: 100%;
+  position: relative;
+}
+
+.mainText {
+  width: 80%;
+  @include mixin.centering(45%);
+
+  .title {
+    @include mixin.textStyles;
+    color: mixin.$primary-font-color;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  h1 {
+    padding: 16px;
+    font-size: mixin.$font-size-h1;
+  }
+
+  p {
+    @include mixin.textStyles(none);
+    font-size: mixin.$font-size-p;
+    font-family: mixin.$second-font-stack;
+  }
+  //   @include mixin.tablet {
+  //     top: 20%;
+  //     left: 35%;
+  //     // transform: translateX(-50%);
+  //   }
+  //   @include mixin.desktop {
+  //     top: 25%;
+  //   }
+}
+
+.socialMedia {
+  @include mixin.centering(65%);
+  margin: 24px auto;
+  @include mixin.flexLayout;
+}
+.socialMedia li:nth-child(2) {
+  margin-left: 24px;
+}
+.socialMedia li:nth-child(3) {
+  margin-left: 24px;
+}
+.icon {
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+    transition: 0.35s ease;
+  }
+}
+
+.contactBtn {
+  @include mixin.centering(80%);
+  @include mixin.mainBtn(#fdf7f2);
+}

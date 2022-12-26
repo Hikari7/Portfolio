@@ -15,18 +15,14 @@ import { SiTypescript } from "@react-icons/all-files/si/SiTypescript";
 import { DiSass } from "@react-icons/all-files/di/DiSass";
 import { FaReact } from "@react-icons/all-files/fa/FaReact";
 import { SiRedux } from "@react-icons/all-files/si/SiRedux";
-// import { SiStyledcomponents } from "@react-icons/all-files/si/SiStyledcomponents";
-// import { TbBrandNextjs } from "@react-icons/all-files/tb/TbBrandNextjs";
 import { FaNodeJs } from "@react-icons/all-files/fa/FaNodeJs";
 import { SiTailwindcss } from "@react-icons/all-files/si/SiTailwindcss";
 import { SiGatsby } from "@react-icons/all-files/si/SiGatsby";
 import { FaBootstrap } from "@react-icons/all-files/fa/FaBootstrap";
-import { SiMaterialui } from "@react-icons/all-files/si/SiMaterialui";
 import { SiFirebase } from "@react-icons/all-files/si/SiFirebase";
 import { DiMongodb } from "@react-icons/all-files/di/DiMongodb";
 import { DiGithubBadge } from "@react-icons/all-files/di/DiGithubBadge";
 import { FaFigma } from "@react-icons/all-files/fa/FaFigma";
-// import { Styledcomponents } from "@styled-icons/simple-icons/Styledcomponents";
 import mui from "../../src/images/material-ui.svg";
 import styledComponents from "../../src/images/styled-components.svg";
 

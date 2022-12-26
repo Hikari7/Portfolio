@@ -1,9 +1,10 @@
 import React from "react";
+import { container } from "./footer.module.scss";
 
 const Footer = () => {
   return (
-    <div>
-      <p>Copyright 2022 Hikari Kobe</p>
+    <div className={container}>
+      <p>© 2022 | Designed & coded by Hikari Kobe </p>
     </div>
   );
 };

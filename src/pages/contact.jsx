@@ -1,11 +1,60 @@
 import React from "react";
-// import "../styles/contact.module.scss"
-import { test } from "../styles/contact.module.scss";
+import {
+  container,
+  title,
+  mainBg,
+  mainText,
+  socialMedia,
+  icon,
+  contactBtn,
+} from "./contact.module.scss";
+import { AiFillGithub } from "@react-icons/all-files/ai/AiFillGithub";
+import { AiFillLinkedin } from "@react-icons/all-files/ai/AiFillLinkedin";
+import { AiFillTwitterCircle } from "@react-icons/all-files/ai/AiFillTwitterCircle";
 
 const contact = () => {
   return (
     <>
-      <di className={test}>Text meeeeee give me a jobbbbbb</di>;
+      <div className={container}>
+        <div className={mainBg}>
+          <div className={mainText}>
+            <div className={title}>
+              <h1>Contact</h1>
+              <p>
+                Thank you for dropping by!
+                <p>
+                  If you like my work, why not contact me for your next project?{" "}
+                </p>
+                <p>
+                  You can find me on social media or send me a message here!
+                </p>
+              </p>
+            </div>
+          </div>
+          <div className={socialMedia}>
+            <li>
+              <a href="https://www.linkedin.com/in/hikari-kobe-106054242/">
+                <AiFillLinkedin size="40px" color="#3e3e3e" className={icon} />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Hikari7">
+                <AiFillGithub size="40px" color="#3e3e3e" className={icon} />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/hk_Vancouver">
+                <AiFillTwitterCircle
+                  size="40px"
+                  color="#3e3e3e"
+                  className={icon}
+                />
+              </a>
+            </li>
+          </div>
+          <button className={contactBtn}>Contact Me</button>
+        </div>
+      </div>
     </>
   );
 };

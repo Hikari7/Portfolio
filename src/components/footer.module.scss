@@ -1,0 +1,8 @@
+@use "../styles/mixin.scss" as mixin;
+
+.container {
+  @include mixin.textStyles(none);
+  justify-content: center;
+  text-align: center;
+  margin: 24px auto;
+}

@@ -55,8 +55,8 @@ $font-size-p: 1.8rem;
 }
 
 //mixinでボタン作ると楽かも
-@mixin mainBtn {
-  font-size: 1.6em;
+@mixin mainBtn($accent-color: #dca0a2) {
+  font-size: 2.2rem;
   @include textStyles;
   background-color: $accent-color;
   text-align: center;
@@ -69,18 +69,3 @@ $font-size-p: 1.8rem;
     transition: 0.35s ease;
   }
 }
-
-//////////////////////////////////////
-//Layoutで使うように置いとく
-
-// .outline {
-//   outline: red solid 1px;
-
-//   @include mixin.tablet {
-//     outline: solid 1px mixin.$color-blue;
-//   }
-
-//   @include mixin.desktop {
-//     outline: solid 1px mixin.$color-green;
-//   }
-// }

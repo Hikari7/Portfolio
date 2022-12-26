@@ -29,16 +29,14 @@
   width: 120px;
   text-align: center;
   margin: 36px auto 6px;
-  // background-color: mixin.$accent-bg-color;
   border-radius: 8px;
   padding: 12px 8px;
 
   @include mixin.textStyles;
   font-size: mixin.$font-size-p;
-
 }
 
-.headline .stripe{
+.headline .stripe {
   width: 120px;
   border-radius: 8px;
   background: repeating-linear-gradient(
