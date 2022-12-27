@@ -12,8 +12,7 @@ import {
   icon,
   li,
   btn,
-  img,
-  imgBg,
+  profilePic,
 } from "./about.module.scss";
 import { TwitterEmbed } from "react-social-media-embed";
 import { AiFillGithub } from "@react-icons/all-files/ai/AiFillGithub";
@@ -34,9 +33,9 @@ const about = () => {
             A Front-End Developer <br></br>specialized <span>React</span>
           </p>
         </main>
-        {/* <div className={imgBg}> */}
-        <img src={profile} alt="profile" className={`${img} ${imgBg}`} />
-        {/* </div> */}
+
+        <img src={profile} alt="profile" className={profilePic} />
+
         <ul className={detail}>
           <li>
             Love to put stylings for <span>a user-friendly application</span>

@@ -2,19 +2,12 @@
 
 import React from "react";
 import { Link } from "gatsby";
-import {
-  displayNav,
-  outline,
-  header,
-  btn,
-  ul,
-  li,
-} from "./displaynav.module.scss";
+import { displayNav, header, btn, ul, li } from "./displaynav.module.scss";
 
 const DisplayNav = () => {
   return (
     <>
-      <nav className={`${outline} ${header} ${displayNav}`}>
+      <nav className={`${header} ${displayNav}`}>
         <h1>
           <Link to="/">HK</Link>
         </h1>

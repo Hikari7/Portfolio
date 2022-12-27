@@ -7,13 +7,13 @@ import {
   main,
   mainBg,
   bg,
-  img,
-  mainWrapper,
+  // img,
+  // mainWrapper,
   downArrow,
   arrow,
-  container
+  container,
 } from "../styles/home.module.scss";
-import portfolio from "../images/portfolio.jpg";
+// import portfolio from "../images/portfolio.jpg";
 import Works from "./Works";
 import About from "./about";
 import Skills from "./skills";
@@ -28,22 +28,22 @@ export default function Home() {
         <div className={bg}>
           <main className={main}>
             <div className={mainBg}></div>
-            <div className={mainWrapper}>
-              <div className={mainText}>
-                <h1>Hi, I'm Hikari</h1>
-                <h2>
-                  A front end developer
-                  <br></br>
-                  based in Vancouver
-                </h2>
-                <button className={btn}>
-                  <Link to="/contact">Contact me</Link>
-                </button>
-              </div>
-              <div>
-                {/* <img src={portfolio} alt="profile" className={img} /> */}
-              </div>
+            {/* <div className={mainWrapper}> */}
+            <div className={mainText}>
+              <h1>Hi, I'm Hikari</h1>
+              <h2>
+                A front end developer
+                <br></br>
+                based in Vancouver
+              </h2>
+              <button className={btn}>
+                <Link to="/contact">Contact me</Link>
+              </button>
             </div>
+            <div>
+              {/* <img src={portfolio} alt="profile" className={img} /> */}
+            </div>
+            {/* </div> */}
           </main>
         </div>
         <div className={arrow}>

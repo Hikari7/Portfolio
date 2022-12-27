@@ -2,13 +2,13 @@
 //ハンバーガーメニュー設置
 
 import React from "react";
-import { div, header } from "./navbar.module.scss";
+import { header } from "./navbar.module.scss";
 import DisplayNav from "./DisplayNav";
 import MobileNav from "./MobileNav";
 
 const Navbar = () => {
   return (
-    <div className={`${div} ${header}`}>
+    <div className={{ header }}>
       <DisplayNav />
       <MobileNav />
     </div>
