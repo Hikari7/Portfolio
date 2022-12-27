@@ -23,7 +23,8 @@ const contact = () => {
               <p>
                 Thank you for dropping by!
                 <p>
-                  If you like my work, why not contact me for your next project?{" "}
+                  If you like my work,<br></br> why not contact me for your next
+                  project?{" "}
                 </p>
                 <p>
                   You can find me on social media or send me a message here!

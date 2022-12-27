@@ -26,11 +26,11 @@ const Works = () => {
   return (
     <>
       <div className={title}>
-        <h1 className={h1}>Works</h1>
-        <h2 className={h3}>Hover over any project to learn more</h2>
+        <h1>Works</h1>
       </div>
 
       <div className={container}>
+        <h2>Hover over any project to learn more</h2>
         <div className={cardWrapper}>
           <img
             src={workoutLog}

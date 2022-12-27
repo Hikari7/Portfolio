@@ -4,20 +4,11 @@
   justify-content: center;
   width: 80%;
   text-align: center;
-  margin: 36px auto;
-}
-
-.h1,
-.h2 {
-  padding: 16px;
-}
-
-.h1 {
-  font-size: mixin.$font-size-h1;
-}
-
-.h2 {
-  font-size: mixin.$font-size-h2;
+  margin: 52px auto;
+  h1 {
+    padding: 16px;
+    font-size: mixin.$font-size-h1;
+  }
 }
 
 .container {
@@ -27,9 +18,13 @@
   padding-bottom: 10%;
   // padding-bottom: 56px;
   // outline: 1px red solid;
+  h2 {
+    font-size: mixin.$font-size-p;
+    text-align: center;
+    font-family: mixin.$second-font-stack;
+  }
 }
 ///////////////////////////////
-
 
 .cardWrapper {
   //   width: 100%;
@@ -38,7 +33,7 @@
   height: 400px;
   // outline: 1px blue solid;
   margin-top: 10%;
-  &:first-child{
+  &:first-child {
     margin-top: 0;
   }
 }
@@ -63,8 +58,3 @@
   border-radius: 16px;
   position: absolute;
 }
-
-//   .backgroundColor {
-//     background-color: black;
-//     // z-index: 5;
-//   }

@@ -1,17 +1,22 @@
 // mixinをここで読み込む
 @use "../styles/mixin.scss" as mixin;
 
-.bg {
+.container {
   height: 90vh;
+}
+
+.bg {
+  height: 90%;
+  position: relative;
 }
 
 .main {
   z-index: -1;
   background-color: mixin.$secondary-bg-color;
-  clip-path: polygon(100% 0, 100% 73%, 16% 96%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 60%, 0 89%, 0 0);
+  // clip-path: polygon(100% 0, 100% 73%, 16% 96%, 0 100%, 0 0);
   height: 100%;
 
-  position: relative;
   .mainBg {
     height: 100%;
     display: none;
@@ -25,66 +30,81 @@
 
 .mainText {
   @include mixin.textStyles;
+  @include mixin.centering(35%);
   z-index: 3;
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 65%;
+  text-align: center;
   @include mixin.tablet {
-    top: 20%;
-    left: 35%;
-    // transform: translateX(-50%);
+    @include mixin.centering(35%);
   }
   @include mixin.desktop {
-    top: 25%;
+    @include mixin.centering(35%);
   }
 }
 .mainText h1 {
-  font-size: 6.5rem;
+  font-size: 5.5rem;
   @include mixin.tablet {
     font-size: 8rem;
   }
 }
 .mainText h2 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 400;
+  @include mixin.tablet {
+    font-size: 4.5rem;
+  }
 }
 
 .btn {
+  justify-content: center;
+  margin: 32px auto 0;
   @include mixin.mainBtn;
-  // font-size: 2.5rem;
-  //   display: inline-block;
-  //   justify-content: center;
-  //   background: mixin.$accent-color;
-  //   padding: 10px 16px;
-  //   border-radius: 10px;
-  //   margin-top: 20px;
-  //   font-weight: 500;
+  z-index: 10;
 }
 
-.img {
-  display: none;
-  @include mixin.desktop {
-    width: 330px;
-    height: 350px;
-    display: inline-block;
-    position: absolute;
-    top: 20%;
-    right: 20%;
-    border-radius: 50%;
-  }
+// .img {
+//   display: none;
+//   @include mixin.desktop {
+//     width: 330px;
+//     height: 350px;
+//     display: inline-block;
+//     @include mixin.centering(35%);
+//     border-radius: 50%;
+//   }
 
-  .imgBg {
-    display: none;
-    @include mixin.desktop {
-      width: 350px;
-      height: 380px;
-      display: inline-block;
-      position: absolute;
+// .imgBg {
+//   display: none;
+//   @include mixin.desktop {
+//     width: 350px;
+//     height: 380px;
+//     display: inline-block;
+//     position: absolute;
+//   }
+// }
+// }
+
+.arrow {
+  height: 10%;
+  animation: float 3s ease-in-out infinite;
+  @include mixin.textStyles(none);
+
+  @keyframes float {
+    0% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(36%);
+    }
+    100% {
+      transform: translateY(0%);
     }
   }
 }
 
-.mainWrapper {
-  width: 40%;
+.downArrow {
+  margin: 0 auto;
+  justify-content: center;
+  width: 10%;
+  display: block;
+  text-align: center;
 }

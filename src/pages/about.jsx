@@ -12,11 +12,14 @@ import {
   icon,
   li,
   btn,
+  img,
+  imgBg,
 } from "./about.module.scss";
 import { TwitterEmbed } from "react-social-media-embed";
 import { AiFillGithub } from "@react-icons/all-files/ai/AiFillGithub";
 import { AiFillLinkedin } from "@react-icons/all-files/ai/AiFillLinkedin";
 import { AiFillTwitterCircle } from "@react-icons/all-files/ai/AiFillTwitterCircle";
+import profile from "../images/portfolio.jpg";
 
 const about = () => {
   return (
@@ -31,6 +34,9 @@ const about = () => {
             A Front-End Developer <br></br>specialized <span>React</span>
           </p>
         </main>
+        {/* <div className={imgBg}> */}
+        <img src={profile} alt="profile" className={`${img} ${imgBg}`} />
+        {/* </div> */}
         <ul className={detail}>
           <li>
             Love to put stylings for <span>a user-friendly application</span>
