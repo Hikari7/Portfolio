@@ -3,7 +3,14 @@
 
 import { Link } from "gatsby";
 import React, { useState } from "react";
-import { mobileBg, ul, li, btn, navEl } from "./mobilenav.module.scss";
+import {
+  mobileBg,
+  ul,
+  li,
+  btn,
+  navEl,
+  mobileNav,
+} from "./mobilenav.module.scss";
 import { motion } from "framer-motion";
 import Hamburger from "hamburger-react";
 
@@ -15,7 +22,7 @@ const MobileNav = () => {
 
   return (
     <>
-      <nav className={navEl}>
+      <nav className={`${navEl} ${mobileNav}`}>
         <h1>
           <Link to="/">HK</Link>
         </h1>

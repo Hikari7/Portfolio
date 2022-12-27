@@ -31,3 +31,9 @@
 .btn {
   @include mixin.mainBtn;
 }
+
+.mobileNav {
+  @include mixin.tablet {
+    display: none;
+  }
+}

@@ -8,7 +8,7 @@ import MobileNav from "./MobileNav";
 
 const Navbar = () => {
   return (
-    <div className={{ header }}>
+    <div className={header}>
       <DisplayNav />
       <MobileNav />
     </div>
