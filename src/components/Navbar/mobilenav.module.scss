@@ -3,15 +3,7 @@
 .ul {
   display: flex;
   flex-direction: column;
-}
-
-.header {
-  @include mixin.flexLayout;
-  width: 80%;
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-between;
-  font-size: mixin.$font-size-h2;
+  padding: 15%;
 }
 
 .li {
@@ -20,6 +12,7 @@
   align-items: center;
   vertical-align: middle;
   padding-bottom: 0;
+  margin-top: 24px;
   &:hover {
     opacity: 0.8;
     transition: 0.35s ease;
@@ -27,7 +20,14 @@
 }
 
 .btn {
-  @include mixin.mainBtn;
+  @include mixin.mainBtn(#fff);
+  width: 150px;
+  margin: 24px auto;
+  justify-content: center;
+  :hover {
+    opacity: 0.8;
+    transition: 0.35s ease;
+  }
 }
 
 .mobileNav {
@@ -36,8 +36,17 @@
   }
 }
 
+.navEl {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .open {
   position: absolute;
+
   right: 10%;
   cursor: pointer;
 }
@@ -50,18 +59,10 @@
 
 .mobileBg {
   position: absolute;
-  background-color: mixin.$secondary-bg-color;
-  top: 60px;
+  background-color: mixin.$accent-color;
+  top: 10vh;
   right: 0;
   width: 100%;
-  height: 50%;
-  z-index: 10;
-}
-
-.ul {
-  padding: 15%;
-}
-
-.li {
-  margin-top: 24px;
+  height: 60%;
+  z-index: 15;
 }

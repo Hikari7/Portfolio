@@ -1,13 +1,6 @@
 import React, { useState } from "react";
-import {
-  title,
-  h1,
-  container,
-  workImg,
-  h3,
-  cardWrapper,
-} from "./index.module.scss";
-// import Cardinfo from "./Cardinfo";
+import { title, container, workImg, cardWrapper } from "./index.module.scss";
+
 import workoutLog from "../../images/workout-tracker.jpg";
 import sleepTight from "../../images/sleep-tight.jpg";
 import cookHelper from "../../images/cooking-helper.jpg";
