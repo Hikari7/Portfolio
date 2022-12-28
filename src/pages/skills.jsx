@@ -7,6 +7,10 @@ import {
   headline,
   skillsList,
   stripe,
+  bg,
+  languages,
+  frontEnd,
+  others,
 } from "./skills.module.scss";
 import { AiFillHtml5 } from "@react-icons/all-files/ai/AiFillHtml5";
 import { DiCss3 } from "@react-icons/all-files/di/DiCss3";
@@ -32,100 +36,105 @@ const skills = () => {
       <div className={title}>
         <h1 className={h1}>Skills</h1>
       </div>
-
-      <div className={container}>
-        <h3 className={headline}>
-          <p className={stripe}>Languages</p>
-        </h3>
-        <div className={wrapper}>
-          <ul className={skillsList}>
-            <li>
-              <AiFillHtml5 size="40px" />
-              <p>HTML5</p>
-            </li>
-            <li>
-              <DiCss3 size="40px" />
-              <p>CSS3</p>
-            </li>
-            <li>
-              <SiJavascript size="40px" color="#dca0a2" />
-              <p>JavaScript</p>
-            </li>
-            <li>
-              <SiTypescript size="40px" />
-              <p>TypeScript</p>
-            </li>
-            <li>
-              <DiSass size="40px" />
-              <p>Sass/SCSS</p>
-            </li>
-          </ul>
-        </div>
-
-        <h3 className={headline}>
-          <p className={stripe}>Front end</p>
-        </h3>
-        <div className={wrapper}>
-          <ul className={skillsList}>
-            <li>
-              <FaReact size="40px" color="#dca0a2" />
-              <p>React</p>
-            </li>
-            <li>
-              <SiRedux size="40px" />
-              <p>Redux</p>
-            </li>
-            <li>
-              <SiTailwindcss size="40px" />
-              <p>Tailwind</p>
-            </li>
-            <li>
-              <FaBootstrap size="40px" />
-              <p>Bootstrap</p>
-            </li>
-            <li>
-              <img src={mui} />
-              <p>MUI</p>
-            </li>
-            <li>
-              <img src={styledComponents} />
-              <p>
-                Styled <br></br>Components
-              </p>
-            </li>
-          </ul>
-        </div>
-
-        <h3 className={headline}>
-          <p className={stripe}>Others</p>
-        </h3>
-        <div className={wrapper}>
-          <ul className={skillsList}>
-            <li>
-              <FaNodeJs size="40px" />
-              <p>Node.js</p>
-            </li>
-            <li>
-              <SiFirebase size="40px" />
-              <p>Firebase</p>
-            </li>
-            <li>
-              <SiGatsby size="40px" />
-              <p>Gatsby</p>
-            </li>
-            <li>
-              <DiMongodb size="40px" />
-              <p>MongoDB</p>
-            </li>
-            <li>
-              <DiGithubBadge size="40px" />
-              <p>Github</p>
-            </li>
-            <li>
-              <FaFigma size="40px" />
-              <p>Figma</p>
-            </li>
-          </ul>
+      <div className={bg}>
+        <div className={container}>
+          <div className={languages}>
+            <h3 className={headline}>
+              <p className={stripe}>Languages</p>
+            </h3>
+            <div className={wrapper}>
+              <ul className={skillsList}>
+                <li>
+                  <AiFillHtml5 size="40px" />
+                  <p>HTML5</p>
+                </li>
+                <li>
+                  <DiCss3 size="40px" />
+                  <p>CSS3</p>
+                </li>
+                <li>
+                  <SiJavascript size="40px" color="#dca0a2" />
+                  <p>JavaScript</p>
+                </li>
+                <li>
+                  <SiTypescript size="40px" />
+                  <p>TypeScript</p>
+                </li>
+                <li>
+                  <DiSass size="40px" />
+                  <p>Sass/SCSS</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className={frontEnd}>
+            <h3 className={headline}>
+              <p className={stripe}>Front end</p>
+            </h3>
+            <div className={wrapper}>
+              <ul className={skillsList}>
+                <li>
+                  <FaReact size="40px" color="#dca0a2" />
+                  <p>React</p>
+                </li>
+                <li>
+                  <SiRedux size="40px" />
+                  <p>Redux</p>
+                </li>
+                <li>
+                  <SiTailwindcss size="40px" />
+                  <p>Tailwind</p>
+                </li>
+                <li>
+                  <FaBootstrap size="40px" />
+                  <p>Bootstrap</p>
+                </li>
+                <li>
+                  <img src={mui} />
+                  <p>MUI</p>
+                </li>
+                <li>
+                  <img src={styledComponents} />
+                  <p>
+                    Styled <br></br>Components
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className={others}>
+            <h3 className={headline}>
+              <p className={stripe}>Others</p>
+            </h3>
+            <div className={wrapper}>
+              <ul className={skillsList}>
+                <li>
+                  <FaNodeJs size="40px" />
+                  <p>Node.js</p>
+                </li>
+                <li>
+                  <SiFirebase size="40px" />
+                  <p>Firebase</p>
+                </li>
+                <li>
+                  <SiGatsby size="40px" />
+                  <p>Gatsby</p>
+                </li>
+                <li>
+                  <DiMongodb size="40px" />
+                  <p>MongoDB</p>
+                </li>
+                <li>
+                  <DiGithubBadge size="40px" />
+                  <p>Github</p>
+                </li>
+                <li>
+                  <FaFigma size="40px" />
+                  <p>Figma</p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </>

@@ -10,7 +10,7 @@
     margin: 52px auto;
     font-size: mixin.$font-size-h1;
   }
-  @include mixin.tablet {
+  @include mixin.desktop {
     height: 10vh;
   }
 }
@@ -20,7 +20,7 @@
   margin: 0 auto;
   width: 90%;
 
-  @include mixin.tablet {
+  @include mixin.desktop {
     height: 90vh;
     overflow: scroll;
   }

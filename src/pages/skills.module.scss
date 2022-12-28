@@ -14,30 +14,44 @@
 .h1 {
   font-size: mixin.$font-size-h1;
 }
+.bg {
+  background-color: mixin.$secondary-bg-color;
+}
 
 .container {
-  background-color: mixin.$secondary-bg-color;
+  margin: 0 auto;
   padding-top: 56px;
   padding-bottom: 56px;
+  width: 90%;
   // outline: 1px solid red;
+  @include mixin.desktop {
+    padding: 0;
+    height: 90vh;
+    display: flex;
+    width: 80%;
+  }
 }
 
 /////////////////
 
 .headline {
   justify-content: center;
-  width: 120px;
+  width: 150px;
   text-align: center;
   margin: 36px auto 6px;
   border-radius: 8px;
   padding: 12px 8px;
 
   @include mixin.textStyles;
-  font-size: mixin.$font-size-p;
+  font-size: mixin.$font-size-h3;
+
+  @include mixin.desktop {
+    padding: 36px 8px;
+  }
 }
 
 .headline .stripe {
-  width: 120px;
+  width: auto;
   border-radius: 8px;
   background: repeating-linear-gradient(
     -45deg,
@@ -55,14 +69,21 @@
   margin: 0 auto;
   border-radius: 16px;
   padding: 2px 0;
+  // display: table-cell;
+  // vertical-align: center;
 }
+
 .skillsList {
   @include mixin.flexLayout;
   padding: 0;
   justify-content: center;
-  width: 60%;
-  margin: 0 auto;
+  // width: 60%;
+  margin: 24px auto;
   flex-wrap: wrap;
+
+  @include mixin.desktop {
+    height: auto;
+  }
 
   li {
     margin-top: 24px;

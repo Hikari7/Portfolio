@@ -4,18 +4,36 @@
   justify-content: center;
   width: 80%;
   text-align: center;
-  margin: 52px auto;
+  margin: 52px auto 0;
+  @include mixin.desktop {
+    height: 10vh;
+  }
 }
 
 .h1 {
   padding: 16px;
   font-size: mixin.$font-size-h1;
+  @include mixin.desktop {
+    padding: 0;
+  }
+}
+
+.bg {
+  background-color: mixin.$secondary-bg-color;
 }
 
 .container {
-  background-color: mixin.$secondary-bg-color;
+  margin: 0 auto;
   padding-top: 56px;
   padding-bottom: 56px;
+  width: 90%;
+
+  @include mixin.desktop {
+    padding: 0;
+    height: 90vh;
+    display: flex;
+    width: 80%;
+  }
 }
 
 /////////////////
@@ -48,10 +66,10 @@
 
 .detail {
   justify-content: center;
-  width: 75%;
+  width: 90%;
   font-size: 1.8rem;
   word-break: break-word;
-  margin: 32px auto;
+  margin: 24px auto;
   @include mixin.textStyles(none);
   font-family: mixin.$second-font-stack;
 
@@ -69,7 +87,7 @@
     text-align: center;
     max-width: 400px;
     justify-content: center;
-    margin: 0px auto;
+    margin: 0 auto;
     // padding: 24px;
     animation: float 5s ease-in-out infinite;
     @include mixin.textStyles(none);
@@ -96,8 +114,10 @@
   text-align: center;
   margin: 24px auto;
   width: 75%;
-  padding: 24px;
   @include mixin.flexLayout;
+  @include mixin.desktop {
+    margin: 12px auto;
+  }
 }
 .socialMedia li:nth-child(2) {
   margin-left: 24px;
@@ -134,11 +154,18 @@
   width: 330px;
   height: 350px;
   display: block;
-  margin: 56px auto;
+  margin: 32px auto;
   justify-content: center;
   position: relative;
   border-radius: 50%;
   // box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  @include mixin.desktop {
+    margin: 24px auto 12px;
+  }
+}
+
+.rightPart {
+  height: 100%;
 }
 
 // .img::after {
