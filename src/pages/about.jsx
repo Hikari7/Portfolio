@@ -66,6 +66,7 @@ const about = () => {
               style={{
                 display: "flex",
                 justifyContent: "center",
+                marginTop: 16,
               }}
             >
               <TwitterEmbed
