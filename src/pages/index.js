@@ -14,7 +14,7 @@ import {
   container,
 } from "../styles/home.module.scss";
 // import portfolio from "../images/portfolio.jpg";
-import Works from "./Works";
+import Works from "./works";
 import About from "./about";
 import Skills from "./skills";
 import Contact from "./contact";

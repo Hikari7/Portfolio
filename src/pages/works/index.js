@@ -1,5 +1,19 @@
 import React, { useState } from "react";
-import { title, container, workImg, cardWrapper } from "./index.module.scss";
+import {
+  title,
+  container,
+  workImg,
+  cardWrapper,
+  rowWrapper,
+  subTitle,
+  work1,
+  work2,
+  work3,
+  work4,
+  work5,
+  work6,
+  bg,
+} from "./index.module.scss";
 
 import workoutLog from "../../images/workout-tracker.jpg";
 import sleepTight from "../../images/sleep-tight.jpg";
@@ -22,50 +36,67 @@ const Works = () => {
         <h1>Works</h1>
       </div>
 
-      <div className={container}>
-        <h2>Hover over any project to learn more</h2>
-        <div className={cardWrapper}>
-          <img
-            src={workoutLog}
-            className={workImg}
-            alt="workoutLog"
-            // onMouseEnter={() => setShowInfo(true)}
-            // onMouseLeave={() => setShowInfo(false)}
-            onMouseOver={() => setShowInfo(!showInfo)}
-            // onMouseOut={handleImg}
-          />
-        </div>
-        <div className={cardWrapper}>
-          <img
-            src={sleepTight}
-            className={workImg}
-            alt="sleepTight"
-            onMouseOver={() => setShowInfo(!showInfo)}
-          />
-        </div>
-        <div className={cardWrapper}>
-          <img
-            src={cookHelper}
-            className={workImg}
-            alt="cookHelper"
-            onMouseOver={() => setShowInfo(!showInfo)}
-          />
-        </div>
-        <div className={cardWrapper}>
-          <img
-            src={oatmealEcSite}
-            className={workImg}
-            alt="oatmealEcSite"
-            onMouseOver={() => setShowInfo(!showInfo)}
-          />
-        </div>
-        <div className={cardWrapper}>
-          <img
-            src={commitFit}
-            className={workImg}
-            alt="oatmealEcSite"
-            onMouseOver={() => setShowInfo(!showInfo)}
-          />
+      <div className={bg}>
+        {/* <h2 className={subTitle}>Hover over any project to learn more!</h2> */}
+        <div className={container}>
+          <div className={rowWrapper}>
+            <div className={`${cardWrapper} ${work1}`}>
+              <img
+                src={workoutLog}
+                className={workImg}
+                alt="workoutLog"
+                // onMouseEnter={() => setShowInfo(true)}
+                // onMouseLeave={() => setShowInfo(false)}
+                onMouseOver={() => setShowInfo(!showInfo)}
+                // onMouseOut={handleImg}
+              />
+            </div>
+            <div className={`${cardWrapper} ${work2}`}>
+              <img
+                src={cookHelper}
+                className={workImg}
+                alt="cookHelper"
+                onMouseOver={() => setShowInfo(!showInfo)}
+              />
+            </div>
+          </div>
+          <div className={rowWrapper}>
+            <div className={`${cardWrapper} ${work3}`}>
+              <img
+                src={oatmealEcSite}
+                className={workImg}
+                alt="oatmealEcSite"
+                onMouseOver={() => setShowInfo(!showInfo)}
+              />
+            </div>
+
+            <div className={`${cardWrapper} ${work4}`}>
+              <img
+                src={sleepTight}
+                className={workImg}
+                alt="sleepTight"
+                onMouseOver={() => setShowInfo(!showInfo)}
+              />
+            </div>
+          </div>
+          <div className={rowWrapper}>
+            <div className={`${cardWrapper} ${work5}`}>
+              <img
+                src={commitFit}
+                className={workImg}
+                alt="oatmealEcSite"
+                onMouseOver={() => setShowInfo(!showInfo)}
+              />
+            </div>
+            <div className={`${cardWrapper} ${work6}`}>
+              <img
+                src={commitFit}
+                className={workImg}
+                alt="oatmealEcSite"
+                onMouseOver={() => setShowInfo(!showInfo)}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </>

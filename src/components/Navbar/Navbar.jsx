@@ -1,6 +1,3 @@
-//一応モバイルファーストなのでモバイル用
-//ハンバーガーメニュー設置
-
 import React from "react";
 import { header } from "./navbar.module.scss";
 import DisplayNav from "./DisplayNav";

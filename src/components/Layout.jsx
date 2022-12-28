@@ -7,11 +7,11 @@ import "../styles/global.scss";
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <>
       <Navbar />
       <div className="content">{children}</div>
       <Footer />
-    </div>
+    </>
   );
 };
 
