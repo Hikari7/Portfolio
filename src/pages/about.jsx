@@ -13,7 +13,7 @@ import {
   li,
   btn,
   profilePic,
-  wrapper,
+  leftPart,
   bg,
   rightPart,
 } from "./about.module.scss";
@@ -22,6 +22,7 @@ import { AiFillGithub } from "@react-icons/all-files/ai/AiFillGithub";
 import { AiFillLinkedin } from "@react-icons/all-files/ai/AiFillLinkedin";
 import { AiFillTwitterCircle } from "@react-icons/all-files/ai/AiFillTwitterCircle";
 import profile from "../images/portfolio.jpg";
+import resume from "../images/Resume_HikariKobe.pdf";
 
 const about = () => {
   return (
@@ -31,7 +32,7 @@ const about = () => {
       </div>
       <div className={bg}>
         <div className={container}>
-          <div className={wrapper}>
+          <div className={leftPart}>
             <main className={main}>
               <p className={h3}>
                 A Front-End Developer <br></br>specialized <span>React</span>
@@ -110,7 +111,8 @@ const about = () => {
               </li>
             </div>
             <button className={`${li} ${btn}`}>
-              <Link to="/">Resume</Link>
+              {/* <Link to="/">Resume</Link> */}
+              <a href={resume}>resume</a>
             </button>
           </div>
         </div>

@@ -37,7 +37,7 @@ export default function Home() {
                 based in Vancouver
               </h2>
               <button className={btn}>
-                <Link to="/contact">Contact me</Link>
+                <a href="mailto:h.kobe712@gmail.com">Contact Me</a>
               </button>
             </div>
             <div>

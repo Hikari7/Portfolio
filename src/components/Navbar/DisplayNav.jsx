@@ -3,6 +3,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { displayNav, header, btn, ul, li } from "./displaynav.module.scss";
+import resume from "../../images/Resume_HikariKobe.pdf";
 
 const DisplayNav = () => {
   return (
@@ -26,7 +27,7 @@ const DisplayNav = () => {
             <Link to="/contact">Contact</Link>
           </li>
           <button className={`${li} ${btn}`}>
-            <Link to="/">Resume</Link>
+            <a href={resume}>Resume</a>
           </button>
         </ul>
       </nav>

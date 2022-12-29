@@ -20,14 +20,14 @@
   margin: 0 auto;
   width: 90%;
 
-  @include mixin.desktop {
-    height: 90vh;
-    overflow: scroll;
-  }
-  @include mixin.desktop {
-    // max-width: 1080px;
-    width: 80%;
-  }
+  // @include mixin.desktop {
+  //   height: 90vh;
+  //   overflow: scroll;
+  // }
+  // @include mixin.desktop {
+  //   // max-width: 1080px;
+  //   width: 80%;
+  // }
   // max-width: 90%;
   // margin: 0 auto;
 
@@ -38,6 +38,8 @@
 }
 ///////////////////////////////
 .bg {
+  padding-top: 56px;
+  padding-bottom: 56px;
   background-color: mixin.$secondary-bg-color;
 }
 
@@ -88,6 +90,9 @@
   // &:first-child {
   //   margin-top: 0;
   // }
+  &:hover {
+    background-color: rgba(211, 171, 85, 0.6);
+  }
 }
 
 .rowWrapper {

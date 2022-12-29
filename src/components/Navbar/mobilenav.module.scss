@@ -31,12 +31,6 @@
   }
 }
 
-.mobileNav {
-  @include mixin.tablet {
-    display: none;
-  }
-}
-
 .navEl {
   margin: 0 auto;
   width: 80%;
@@ -55,7 +49,7 @@
   z-index: 15;
 }
 
-.mobileNav {
+.mobile {
   @include mixin.flexLayout;
   width: 80%;
   display: flex;

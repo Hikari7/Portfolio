@@ -53,7 +53,9 @@ const contact = () => {
               </a>
             </li>
           </div>
-          <button className={contactBtn}>Contact Me</button>
+          <button className={contactBtn}>
+            <a href="mailto:h.kobe712@gmail.com">Contact Me</a>
+          </button>
         </div>
       </div>
     </>
