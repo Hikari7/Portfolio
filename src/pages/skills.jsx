@@ -8,9 +8,6 @@ import {
   skillsList,
   stripe,
   bg,
-  languages,
-  frontEnd,
-  others,
 } from "./skills.module.scss";
 import { AiFillHtml5 } from "@react-icons/all-files/ai/AiFillHtml5";
 import { DiCss3 } from "@react-icons/all-files/di/DiCss3";
@@ -38,7 +35,7 @@ const skills = () => {
       </div>
       <div className={bg}>
         <div className={container}>
-          <div className={languages}>
+          <div>
             <h3 className={headline}>
               <p className={stripe}>Languages</p>
             </h3>
@@ -67,7 +64,7 @@ const skills = () => {
               </ul>
             </div>
           </div>
-          <div className={frontEnd}>
+          <div>
             <h3 className={headline}>
               <p className={stripe}>Front end</p>
             </h3>
@@ -90,11 +87,11 @@ const skills = () => {
                   <p>Bootstrap</p>
                 </li>
                 <li>
-                  <img src={mui} />
+                  <img src={mui} alt="mui" />
                   <p>MUI</p>
                 </li>
                 <li>
-                  <img src={styledComponents} />
+                  <img src={styledComponents} alt="styledComponents" />
                   <p>
                     Styled <br></br>Components
                   </p>
@@ -102,7 +99,7 @@ const skills = () => {
               </ul>
             </div>
           </div>
-          <div className={others}>
+          <div>
             <h3 className={headline}>
               <p className={stripe}>Others</p>
             </h3>

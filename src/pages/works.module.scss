@@ -1,11 +1,11 @@
-@use "../../styles/mixin.scss" as mixin;
+@use "../styles/mixin.scss" as mixin;
 
 .title {
   justify-content: center;
   width: 80%;
   text-align: center;
   margin: 0 auto;
-  // margin-top: 56px;
+
   h1 {
     margin: 52px auto;
     font-size: mixin.$font-size-h1;
@@ -19,22 +19,6 @@
   padding-bottom: 56px;
   margin: 0 auto;
   width: 90%;
-
-  // @include mixin.desktop {
-  //   height: 90vh;
-  //   overflow: scroll;
-  // }
-  // @include mixin.desktop {
-  //   // max-width: 1080px;
-  //   width: 80%;
-  // }
-  // max-width: 90%;
-  // margin: 0 auto;
-
-  // @include mixin.tablet {
-  //   min-width: 80%;
-  //   max-width: 90%;
-  // }
 }
 ///////////////////////////////
 .bg {
@@ -61,38 +45,27 @@
 }
 
 .workImg {
+  z-index: 0;
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  cursor: pointer;
-  position: relative;
   object-fit: cover;
-  //   background-image: url(../../images/workout_tracker.jpg);
-  //   background-position: center;
-  //   background-size: contain;
+  position: relative;
 }
-.workDetail {
-  background-color: hsla(50, 33%, 25%, 0.75);
+
+.overLay {
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 16px;
-  cursor: pointer;
   width: 100%;
   height: 450px;
   border-radius: 10px;
-  position: absolute;
 }
 
 /////
 
 .cardWrapper {
-  height: 500px;
-  // outline: 1px blue solid;
+  height: 450px;
   margin-top: 10%;
-  // &:first-child {
-  //   margin-top: 0;
-  // }
-  &:hover {
-    background-color: rgba(211, 171, 85, 0.6);
-  }
 }
 
 .rowWrapper {
@@ -122,5 +95,63 @@
     .work6 {
       margin-left: 40px;
     }
+  }
+}
+
+.notdisplayed {
+  display: none;
+}
+
+.btn {
+  @include mixin.mainBtn;
+}
+
+.content {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  h1 {
+    padding-top: 10%;
+    color: #fff;
+    font-size: mixin.$font-size-h2;
+  }
+
+  p {
+    color: #fff;
+    font-size: mixin.$font-size-p;
+    font-family: mixin.$second-font-stack;
+    padding-top: 5%;
+  }
+
+  .tools {
+    font-family: mixin.$second-font-stack;
+    font-size: mixin.$font-size-p;
+    justify-content: space-between;
+    display: flex;
+    width: 80%;
+    margin: 24px auto;
+    justify-content: space-between;
+    span {
+      display: block;
+      padding: 12px;
+      color: #fff;
+      outline: 1px solid mixin.$accent-bg-color;
+      border-radius: 16px;
+      width: 120px;
+    }
+  }
+
+  .site {
+    justify-content: space-between;
+    display: flex;
+    width: 25%;
+    margin: 0 auto;
+    margin-top: 48px;
+    color: mixin.$accent-color;
+    cursor: pointer;
+    font-size: 52px;
+    z-index: 5;
   }
 }

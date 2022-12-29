@@ -20,7 +20,7 @@ const contact = () => {
           <div className={mainText}>
             <div className={title}>
               <h1>Contact</h1>
-              <p>
+              <div>
                 Thank you for dropping by!
                 <p>
                   If you like my work,<br></br> why not contact me for your next
@@ -29,7 +29,7 @@ const contact = () => {
                 <p>
                   You can find me on social media or send me a message here!
                 </p>
-              </p>
+              </div>
             </div>
           </div>
           <div className={socialMedia}>

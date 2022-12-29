@@ -1,5 +1,3 @@
-//タブレットサイズ
-
 import React from "react";
 import { Link } from "gatsby";
 import { displayNav, header, btn, ul, li } from "./displaynav.module.scss";
