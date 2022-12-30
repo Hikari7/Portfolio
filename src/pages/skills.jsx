@@ -26,6 +26,7 @@ import { DiGithubBadge } from "@react-icons/all-files/di/DiGithubBadge";
 import { FaFigma } from "@react-icons/all-files/fa/FaFigma";
 import mui from "../../src/images/material-ui.svg";
 import styledComponents from "../../src/images/styled-components.svg";
+import AnimateInView from "../components/Animation";
 
 const skills = () => {
   return (
@@ -39,98 +40,104 @@ const skills = () => {
             <h3 className={headline}>
               <p className={stripe}>Languages</p>
             </h3>
-            <div className={wrapper}>
-              <ul className={skillsList}>
-                <li>
-                  <AiFillHtml5 size="40px" />
-                  <p>HTML5</p>
-                </li>
-                <li>
-                  <DiCss3 size="40px" />
-                  <p>CSS3</p>
-                </li>
-                <li>
-                  <SiJavascript size="40px" color="#dca0a2" />
-                  <p>JavaScript</p>
-                </li>
-                <li>
-                  <SiTypescript size="40px" />
-                  <p>TypeScript</p>
-                </li>
-                <li>
-                  <DiSass size="40px" />
-                  <p>Sass/SCSS</p>
-                </li>
-              </ul>
-            </div>
+            <AnimateInView>
+              <div className={wrapper}>
+                <ul className={skillsList}>
+                  <li>
+                    <AiFillHtml5 size="40px" />
+                    <p>HTML5</p>
+                  </li>
+                  <li>
+                    <DiCss3 size="40px" />
+                    <p>CSS3</p>
+                  </li>
+                  <li>
+                    <SiJavascript size="40px" color="#dca0a2" />
+                    <p>JavaScript</p>
+                  </li>
+                  <li>
+                    <SiTypescript size="40px" />
+                    <p>TypeScript</p>
+                  </li>
+                  <li>
+                    <DiSass size="40px" />
+                    <p>Sass/SCSS</p>
+                  </li>
+                </ul>
+              </div>
+            </AnimateInView>
           </div>
           <div>
             <h3 className={headline}>
               <p className={stripe}>Front end</p>
             </h3>
-            <div className={wrapper}>
-              <ul className={skillsList}>
-                <li>
-                  <FaReact size="40px" color="#dca0a2" />
-                  <p>React</p>
-                </li>
-                <li>
-                  <SiRedux size="40px" />
-                  <p>Redux</p>
-                </li>
-                <li>
-                  <SiTailwindcss size="40px" />
-                  <p>Tailwind</p>
-                </li>
-                <li>
-                  <FaBootstrap size="40px" />
-                  <p>Bootstrap</p>
-                </li>
-                <li>
-                  <img src={mui} alt="mui" />
-                  <p>MUI</p>
-                </li>
-                <li>
-                  <img src={styledComponents} alt="styledComponents" />
-                  <p>
-                    Styled <br></br>Components
-                  </p>
-                </li>
-              </ul>
-            </div>
+            <AnimateInView>
+              <div className={wrapper}>
+                <ul className={skillsList}>
+                  <li>
+                    <FaReact size="40px" color="#dca0a2" />
+                    <p>React</p>
+                  </li>
+                  <li>
+                    <SiRedux size="40px" />
+                    <p>Redux</p>
+                  </li>
+                  <li>
+                    <SiTailwindcss size="40px" />
+                    <p>Tailwind</p>
+                  </li>
+                  <li>
+                    <FaBootstrap size="40px" />
+                    <p>Bootstrap</p>
+                  </li>
+                  <li>
+                    <img src={mui} alt="mui" />
+                    <p>MUI</p>
+                  </li>
+                  <li>
+                    <img src={styledComponents} alt="styledComponents" />
+                    <p>
+                      Styled <br></br>Components
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </AnimateInView>
           </div>
           <div>
             <h3 className={headline}>
               <p className={stripe}>Others</p>
             </h3>
-            <div className={wrapper}>
-              <ul className={skillsList}>
-                <li>
-                  <FaNodeJs size="40px" />
-                  <p>Node.js</p>
-                </li>
-                <li>
-                  <SiFirebase size="40px" />
-                  <p>Firebase</p>
-                </li>
-                <li>
-                  <SiGatsby size="40px" />
-                  <p>Gatsby</p>
-                </li>
-                <li>
-                  <DiMongodb size="40px" />
-                  <p>MongoDB</p>
-                </li>
-                <li>
-                  <DiGithubBadge size="40px" />
-                  <p>Github</p>
-                </li>
-                <li>
-                  <FaFigma size="40px" />
-                  <p>Figma</p>
-                </li>
-              </ul>
-            </div>
+            <AnimateInView>
+              <div className={wrapper}>
+                <ul className={skillsList}>
+                  <li>
+                    <FaNodeJs size="40px" />
+                    <p>Node.js</p>
+                  </li>
+                  <li>
+                    <SiFirebase size="40px" />
+                    <p>Firebase</p>
+                  </li>
+                  <li>
+                    <SiGatsby size="40px" />
+                    <p>Gatsby</p>
+                  </li>
+                  <li>
+                    <DiMongodb size="40px" />
+                    <p>MongoDB</p>
+                  </li>
+                  <li>
+                    <DiGithubBadge size="40px" />
+                    <p>Github</p>
+                  </li>
+                  <li>
+                    <FaFigma size="40px" />
+                    <p>Figma</p>
+                  </li>
+                </ul>
+              </div>
+            </AnimateInView>
           </div>
         </div>
       </div>

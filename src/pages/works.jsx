@@ -20,6 +20,7 @@ import oatmealEcSite from "../images/oatmeal-ecsite.jpg";
 import commitFit from "../images/commit-fit.jpg";
 import portfolio from "../images/portfolioSite.jpg";
 import WorkCard from "../components/WorkCard";
+import AnimateInView from "../components/Animation";
 
 import { motion, useAnimation } from "framer-motion";
 // import { useInView } from "react-intersection-observer";

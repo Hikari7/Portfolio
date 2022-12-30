@@ -11,6 +11,7 @@ import {
 import { AiFillGithub } from "@react-icons/all-files/ai/AiFillGithub";
 import { AiFillLinkedin } from "@react-icons/all-files/ai/AiFillLinkedin";
 import { AiFillTwitterCircle } from "@react-icons/all-files/ai/AiFillTwitterCircle";
+import AnimateInView from "../components/Animation";
 
 const contact = () => {
   return (
@@ -20,15 +21,17 @@ const contact = () => {
           <div className={mainText}>
             <div className={title}>
               <h1>Contact</h1>
-              <div>
-                <p>
-                  If you like my work,<br></br> why not contact me for your next
-                  project?{" "}
-                </p>
-                <p>
-                  You can find me on social media or send me a message here!
-                </p>
-              </div>
+              <AnimateInView>
+                <div>
+                  <p>
+                    If you like my work,<br></br> why not contact me for your
+                    next project?{" "}
+                  </p>
+                  <p>
+                    You can find me on social media or send me a message here!
+                  </p>
+                </div>
+              </AnimateInView>
             </div>
           </div>
           <div className={socialMedia}>

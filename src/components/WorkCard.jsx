@@ -9,7 +9,7 @@ import {
 } from "./workcard.module.scss";
 import { DiGithubBadge } from "@react-icons/all-files/di/DiGithubBadge";
 import { FiExternalLink } from "@react-icons/all-files/fi/FiExternalLink";
-import { motion } from "framer-motion";
+import AnimateInView from "./Animation";
 function WorkCard({
   worktitle,
   details,
@@ -19,7 +19,6 @@ function WorkCard({
   github,
   link,
   image,
-  cardVariant,
 }) {
   const [showInfo, setShowInfo] = useState(false);
 
@@ -33,46 +32,40 @@ function WorkCard({
     setShowInfo(false);
   };
 
-  // const cardVariant = {
-  //   visible: { opacity: 1, scale: 2, transition: { duration: 1 } },
-  //   hidden: { opacity: 0, scale: 0 },
-  // };
-
   return (
     <>
-      <motion.div
-        animate={{ x: 0 }}
-        initial={{ x: "100%" }}
-        variants={cardVariant}
-        // initial={{ opacity: 0, transition: { duration: 1 } }}
-        // animate={{ opacity: 1 }}
-        className={cardWrapper}
-        onMouseEnter={(e) => showDetails(e)}
-        onMouseLeave={(e) => hideDetails(e)}
-      >
-        {showInfo && (
-          <div className={overLay}>
-            <div className={content}>
-              <h1>{worktitle}</h1>
-              <p>{details}</p>
-              <div className={tools}>
-                <span>{tool}</span>
-                <span>{tool2}</span>
-                <span>{tool3}</span>
-              </div>
-              <div className={site}>
-                <a href={github}>
-                  <DiGithubBadge size={42} color="#dca0a2" />
-                </a>
-                <a href={link}>
-                  <FiExternalLink size={36} color="#dca0a2" />
-                </a>
+      <AnimateInView>
+        <div
+          className={cardWrapper}
+          onMouseEnter={(e) => showDetails(e)}
+          onMouseLeave={(e) => hideDetails(e)}
+        >
+          {showInfo && (
+            <div className={overLay}>
+              <div className={content}>
+                <h1>{worktitle}</h1>
+                <p>{details}</p>
+                <div className={tools}>
+                  <span>{tool}</span>
+                  <span>{tool2}</span>
+                  <span>{tool3}</span>
+                </div>
+                <div className={site}>
+                  <a href={github}>
+                    <DiGithubBadge size={42} color="#dca0a2" />
+                  </a>
+                  <a href={link}>
+                    <FiExternalLink size={36} color="#dca0a2" />
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        )}
-        {!showInfo && <img src={image} className={workImg} alt="workoutLog" />}
-      </motion.div>
+          )}
+          {!showInfo && (
+            <img src={image} className={workImg} alt="workoutLog" />
+          )}
+        </div>
+      </AnimateInView>
     </>
   );
 }
