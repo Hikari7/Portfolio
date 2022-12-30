@@ -14,7 +14,6 @@
   z-index: -1;
   background-color: mixin.$secondary-bg-color;
   clip-path: polygon(100% 0, 100% 60%, 0 89%, 0 0);
-  // clip-path: polygon(100% 0, 100% 73%, 16% 96%, 0 100%, 0 0);
   height: 100%;
 
   .mainBg {
@@ -61,27 +60,6 @@
   @include mixin.mainBtn;
   z-index: 10;
 }
-
-// .img {
-//   display: none;
-//   @include mixin.desktop {
-//     width: 330px;
-//     height: 350px;
-//     display: inline-block;
-//     @include mixin.centering(35%);
-//     border-radius: 50%;
-//   }
-
-// .imgBg {
-//   display: none;
-//   @include mixin.desktop {
-//     width: 350px;
-//     height: 380px;
-//     display: inline-block;
-//     position: absolute;
-//   }
-// }
-// }
 
 .arrow {
   height: 10%;

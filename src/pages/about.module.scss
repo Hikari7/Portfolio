@@ -30,7 +30,6 @@
 
   @include mixin.desktop {
     padding: 0;
-    // height: 90vh;
     display: flex;
     width: 80%;
   }
@@ -88,7 +87,6 @@
     max-width: 400px;
     justify-content: center;
     margin: 0 auto;
-    // padding: 24px;
     animation: float 5s ease-in-out infinite;
     @include mixin.textStyles(none);
 
@@ -158,7 +156,6 @@
   justify-content: center;
   position: relative;
   border-radius: 50%;
-  // box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   @include mixin.desktop {
     margin: 24px auto 12px;
   }

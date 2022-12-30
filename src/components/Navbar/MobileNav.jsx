@@ -1,6 +1,3 @@
-//一応モバイルファーストなのでモバイル用
-//ハンバーガーメニュー設置
-
 import { Link } from "gatsby";
 import React, { useState } from "react";
 import { mobileBg, ul, li, btn, navEl, mobile } from "./mobilenav.module.scss";
@@ -120,7 +117,6 @@ const MobileNav = () => {
                 transition={{ delay: 0.45 }}
               >
                 <a href={resume}>Resume</a>
-                {/* <Link to="/">Resume</Link> */}
               </motion.button>
             </ul>
           </motion.div>

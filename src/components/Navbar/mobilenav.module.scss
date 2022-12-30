@@ -14,7 +14,7 @@
   vertical-align: middle;
   padding-bottom: 0;
   margin-top: 24px;
-  &:hover {
+  &::hover {
     opacity: 0.8;
     transition: 0.35s ease;
   }

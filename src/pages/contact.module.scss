@@ -34,14 +34,6 @@
     font-size: mixin.$font-size-p;
     font-family: mixin.$second-font-stack;
   }
-  //   @include mixin.tablet {
-  //     top: 20%;
-  //     left: 35%;
-  //     // transform: translateX(-50%);
-  //   }
-  //   @include mixin.desktop {
-  //     top: 25%;
-  //   }
 }
 
 .socialMedia {

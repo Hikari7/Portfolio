@@ -21,7 +21,6 @@ const contact = () => {
             <div className={title}>
               <h1>Contact</h1>
               <div>
-                Thank you for dropping by!
                 <p>
                   If you like my work,<br></br> why not contact me for your next
                   project?{" "}

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import {
   title,
   h1,
@@ -112,7 +111,6 @@ const about = () => {
               </li>
             </div>
             <button className={`${li} ${btn}`}>
-              {/* <Link to="/">Resume</Link> */}
               <a href={resume}>resume</a>
             </button>
           </div>

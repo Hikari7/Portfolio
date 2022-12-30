@@ -28,7 +28,7 @@ export default function Home() {
         <div className={bg}>
           <main className={main}>
             <div className={mainBg}></div>
-            {/* <div className={mainWrapper}> */}
+
             <div className={mainText}>
               <h1>Hi, I'm Hikari</h1>
               <h2>
@@ -40,10 +40,7 @@ export default function Home() {
                 <a href="mailto:h.kobe712@gmail.com">Contact Me</a>
               </button>
             </div>
-            <div>
-              {/* <img src={portfolio} alt="profile" className={img} /> */}
-            </div>
-            {/* </div> */}
+            <div></div>
           </main>
         </div>
         <div className={arrow}>

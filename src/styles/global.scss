@@ -11,19 +11,16 @@ $primary-bg-color: #fff;
 $primary-font-color: #3e3e3e;
 
 html {
-  // font: 100% $font-stack;
   font-family: 100% $font-stack;
   color: $primary-font-color;
   font-size: 62.5%;
 
   p {
     @include mixin.textStyles;
-    // font-family: $second-font-stack;
   }
 
   li {
     list-style: none;
-    // font-family: $second-font-stack;
   }
 
   a {
