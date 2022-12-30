@@ -58,7 +58,8 @@ const about = () => {
               </li>
               <li>
                 Spend most of my free time working out, travelling and watching
-                sitcoms (<span>"The office" is the best show ever!</span>)
+                sitcoms <br></br>(
+                <span>"The office" is the best show ever!</span>)
               </li>
             </ul>
           </div>
