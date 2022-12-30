@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   title,
   container,
@@ -21,7 +21,34 @@ import commitFit from "../images/commit-fit.jpg";
 import portfolio from "../images/portfolioSite.jpg";
 import WorkCard from "../components/WorkCard";
 
+import { motion, useAnimation } from "framer-motion";
+// import { useInView } from "react-intersection-observer";
+
 const Works = () => {
+  // const control = useAnimation();
+  // const [ref, inView] = useInView({ threshold: 0.2 });
+
+  // const cardVariant = {
+  //   visible: {
+  //     opacity: 1,
+  //     x: 0,
+  //     transition: {
+  //       duration: 1,
+  //       // delay: 0.3,
+  //       ease: "easeIn",
+  //     },
+  //   },
+  //   hidden: { opacity: 0, x: "50%" },
+  // };
+
+  // useEffect(() => {
+  //   if (inView) {
+  //     control.start("visible");
+  //   } else {
+  //     control.start("hidden");
+  //   }
+  // }, [control, inView]);
+
   return (
     <>
       <div className={title}>
@@ -34,7 +61,13 @@ const Works = () => {
           <br></br>
           You can also see the details from the Github link.
         </h2>
-        <div className={container}>
+        <div
+          className={container}
+          // ref={ref}
+          // variants={cardVariant}
+          // initial="hidden"
+          // animate={control}
+        >
           <div className={rowWrapper}>
             <div className={work1}>
               <WorkCard

@@ -2,31 +2,120 @@ import React from "react";
 import { Link } from "gatsby";
 import { displayNav, header, btn, ul, li } from "./displaynav.module.scss";
 import resume from "../../images/Resume_HikariKobe.pdf";
-
+import { motion } from "framer-motion";
 const DisplayNav = () => {
   return (
     <>
       <nav className={`${header} ${displayNav}`}>
-        <h1>
+        <motion.h1
+          initial={{
+            opacity: 0,
+            y: "-100%",
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              duration: 0.85,
+              delay: 0.3,
+              ease: "easeInOut",
+            },
+          }}
+        >
           <Link to="/">HK</Link>
-        </h1>
+        </motion.h1>
 
         <ul className={ul}>
-          <li className={li}>
+          <motion.li
+            className={li}
+            initial={{
+              opacity: 0,
+              y: "-100%",
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 0.85,
+                delay: 0.5,
+                ease: "easeInOut",
+              },
+            }}
+          >
             <Link to="/works">Works</Link>
-          </li>
-          <li className={li}>
+          </motion.li>
+          <motion.li
+            className={li}
+            initial={{
+              opacity: 0,
+              y: "-100%",
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 0.85,
+                delay: 0.7,
+                ease: "easeInOut",
+              },
+            }}
+          >
             <Link to="/about">About</Link>
-          </li>
-          <li className={li}>
+          </motion.li>
+          <motion.li
+            className={li}
+            initial={{
+              opacity: 0,
+              y: "-100%",
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 0.85,
+                delay: 0.9,
+                ease: "easeInOut",
+              },
+            }}
+          >
             <Link to="/skills">Skills</Link>
-          </li>
-          <li className={li}>
+          </motion.li>
+          <motion.li
+            className={li}
+            initial={{
+              opacity: 0,
+              y: "-100%",
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 0.85,
+                delay: 1.1,
+                ease: "easeInOut",
+              },
+            }}
+          >
             <Link to="/contact">Contact</Link>
-          </li>
-          <button className={`${li} ${btn}`}>
+          </motion.li>
+          <motion.button
+            className={`${li} ${btn}`}
+            initial={{
+              opacity: 0,
+              y: "-100%",
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 0.85,
+                delay: 1.13,
+                ease: "easeInOut",
+              },
+            }}
+          >
             <a href={resume}>Resume</a>
-          </button>
+          </motion.button>
         </ul>
       </nav>
     </>

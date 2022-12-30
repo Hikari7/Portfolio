@@ -9,7 +9,7 @@ import {
 } from "./workcard.module.scss";
 import { DiGithubBadge } from "@react-icons/all-files/di/DiGithubBadge";
 import { FiExternalLink } from "@react-icons/all-files/fi/FiExternalLink";
-
+import { motion } from "framer-motion";
 function WorkCard({
   worktitle,
   details,
@@ -19,6 +19,7 @@ function WorkCard({
   github,
   link,
   image,
+  cardVariant,
 }) {
   const [showInfo, setShowInfo] = useState(false);
 
@@ -32,9 +33,19 @@ function WorkCard({
     setShowInfo(false);
   };
 
+  // const cardVariant = {
+  //   visible: { opacity: 1, scale: 2, transition: { duration: 1 } },
+  //   hidden: { opacity: 0, scale: 0 },
+  // };
+
   return (
     <>
-      <div
+      <motion.div
+        animate={{ x: 0 }}
+        initial={{ x: "100%" }}
+        variants={cardVariant}
+        // initial={{ opacity: 0, transition: { duration: 1 } }}
+        // animate={{ opacity: 1 }}
         className={cardWrapper}
         onMouseEnter={(e) => showDetails(e)}
         onMouseLeave={(e) => hideDetails(e)}
@@ -50,7 +61,7 @@ function WorkCard({
                 <span>{tool3}</span>
               </div>
               <div className={site}>
-                <a href={github} >
+                <a href={github}>
                   <DiGithubBadge size={42} color="#dca0a2" />
                 </a>
                 <a href={link}>
@@ -61,7 +72,7 @@ function WorkCard({
           </div>
         )}
         {!showInfo && <img src={image} className={workImg} alt="workoutLog" />}
-      </div>
+      </motion.div>
     </>
   );
 }

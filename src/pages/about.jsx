@@ -1,7 +1,6 @@
 import React from "react";
 import {
   title,
-  h1,
   h3,
   container,
   main,
@@ -72,7 +71,7 @@ const about = () => {
               }}
             >
               <TwitterEmbed
-                url="https://twitter.com/hk_Vancouver/status/1559786990794551297"
+                url="https://twitter.com/hk_Vancouver/status/1608891933912600577"
                 width={450}
                 height={600}
               />

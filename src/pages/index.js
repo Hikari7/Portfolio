@@ -1,24 +1,21 @@
 import * as React from "react";
 import Layout from "../components/Layout";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 import {
   mainText,
   btn,
   main,
   mainBg,
   bg,
-  // img,
-  // mainWrapper,
   downArrow,
   arrow,
   container,
 } from "../styles/home.module.scss";
-// import portfolio from "../images/portfolio.jpg";
+import { motion } from "framer-motion";
 import Works from "./works";
 import About from "./about";
 import Skills from "./skills";
 import Contact from "./contact";
-// import { HiOutlineChevronDown } from "@react-icons/all-files/hi/HiOutlineChevronDown";
 import { GrDown } from "@react-icons/all-files/gr/GrDown";
 
 export default function Home() {
@@ -30,24 +27,84 @@ export default function Home() {
             <div className={mainBg}></div>
 
             <div className={mainText}>
-              <h1>Hi, I'm Hikari</h1>
-              <h2>
+              <motion.h1
+                initial={{
+                  opacity: 0,
+                  y: "100%",
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    duration: 1,
+                    delay: 2.2,
+                    ease: "easeInOut",
+                  },
+                }}
+              >
+                Hi, I'm Hikari
+              </motion.h1>
+              <motion.h2
+                initial={{
+                  opacity: 0,
+                  y: "100%",
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    duration: 1,
+                    delay: 2.7,
+                    ease: "easeInOut",
+                  },
+                }}
+              >
                 A front end developer
                 <br></br>
                 based in Vancouver
-              </h2>
-              <button className={btn}>
+              </motion.h2>
+              <motion.button
+                className={btn}
+                initial={{
+                  opacity: 0,
+                  y: "100%",
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    duration: 1,
+                    delay: 3,
+                    ease: "easeInOut",
+                  },
+                }}
+              >
                 <a href="mailto:h.kobe712@gmail.com">Contact Me</a>
-              </button>
+              </motion.button>
             </div>
             <div></div>
           </main>
         </div>
-        <div className={arrow}>
+        <motion.div
+          className={arrow}
+          initial={{
+            opacity: 0,
+            y: "100%",
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              duration: 1,
+              delay: 3.5,
+              ease: "easeInOut",
+            },
+          }}
+        >
           <span className={downArrow}>
             <GrDown size="40px" />
           </span>
-        </div>
+        </motion.div>
       </div>
       <Works />
       <About />
