@@ -2,7 +2,6 @@ import React from "react";
 import {
   title,
   container,
-  cardWrapper,
   rowWrapper,
   subTitle,
   work1,
@@ -30,14 +29,18 @@ const Works = () => {
       </div>
 
       <div className={bg}>
-        <h2 className={subTitle}>Hover over any project to learn more!</h2>
+        <h2 className={subTitle}>
+          Hover over any project to learn more!
+          <br></br>
+          You can also see the details from the Github link.
+        </h2>
         <div className={container}>
           <div className={rowWrapper}>
-            <div className={`${cardWrapper} ${work1}`}>
+            <div className={work1}>
               <WorkCard
                 worktitle={"Workout Tracker"}
                 details={
-                  "A workout log application provides the store the user information and their posts."
+                  "A workout tracker recording app provides the store the user information and their posts."
                 }
                 tool={"React.js"}
                 tool2={"FireBase"}
@@ -50,12 +53,10 @@ const Works = () => {
             <div className={work2}>
               <WorkCard
                 worktitle={"Cook Helper"}
-                details={
-                  "A web application helps users to prepare meals which has searching recipe and grocery lists"
-                }
+                details={"A recipe searching app which has grocery lists"}
                 tool={"React.js"}
                 tool2={"Tailwind"}
-                tool3={"Rest API"}
+                tool3={"Spoonacular API"}
                 github={"https://github.com/Hikari7/Cooking_helper_ReactApp"}
                 link={"https://meal-idea-generation-react-app.vercel.app/"}
                 image={cookHelper}
@@ -67,7 +68,7 @@ const Works = () => {
               <WorkCard
                 worktitle={"Oatmeal EC Site"}
                 details={
-                  "An Ecommerce website using JavaScript and the Local Storage."
+                  "An Ecommerce website using vanilla JS and the Local Storage"
                 }
                 tool={"HTML"}
                 tool2={"SASS"}
@@ -80,9 +81,9 @@ const Works = () => {
             <div className={work4}>
               <WorkCard
                 worktitle={"Sleep Tight"}
-                details={"A web application helps users to sleep better"}
+                details={"A web app only plays BGM-related relaxing sounds"}
                 tool={"React.js"}
-                tool2={"Rest API"}
+                tool2={"YouTube Data API v3"}
                 tool3={"Tailwind/GSAP"}
                 github={"https://github.com/Hikari7/SleepTight_ReactApp"}
                 link={"https://sleeptight.vercel.app/"}
@@ -97,7 +98,7 @@ const Works = () => {
                 details={"My portfolio"}
                 tool={"React.js"}
                 tool2={"Sass"}
-                tool3={"Framer motion"}
+                tool3={"Framer-motion"}
                 github={"https://github.com/Hikari7/portfolio"}
                 link={"hikari-kobe.vercel.app"}
                 image={portfolio}

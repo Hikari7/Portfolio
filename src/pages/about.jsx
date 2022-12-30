@@ -20,6 +20,7 @@ import { TwitterEmbed } from "react-social-media-embed";
 import { AiFillGithub } from "@react-icons/all-files/ai/AiFillGithub";
 import { AiFillLinkedin } from "@react-icons/all-files/ai/AiFillLinkedin";
 import { AiFillTwitterCircle } from "@react-icons/all-files/ai/AiFillTwitterCircle";
+import { GrArticle } from "@react-icons/all-files/gr/GrArticle";
 import profile from "../images/portfolio.jpg";
 import resume from "../images/Resume_HikariKobe.pdf";
 
@@ -27,7 +28,7 @@ const about = () => {
   return (
     <>
       <div className={title}>
-        <h1 className={h1}>About Me</h1>
+        <h1>About Me</h1>
       </div>
       <div className={bg}>
         <div className={container}>
@@ -107,6 +108,11 @@ const about = () => {
                     color="#3e3e3e"
                     className={icon}
                   />
+                </a>
+              </li>
+              <li>
+                <a href="https://dev.to/hikari7">
+                  <GrArticle size="40px" color="#3e3e3e" className={icon} />
                 </a>
               </li>
             </div>

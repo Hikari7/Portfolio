@@ -7,11 +7,8 @@
   margin: 0 auto;
 
   h1 {
-    margin: 52px auto;
+    margin: 56px auto;
     font-size: mixin.$font-size-h1;
-  }
-  @include mixin.desktop {
-    height: 10vh;
   }
 }
 
@@ -28,21 +25,21 @@
 }
 
 .subTitle {
-  padding: 52px;
+  padding: 32px;
   font-size: mixin.$font-size-p;
   text-align: center;
   font-family: mixin.$second-font-stack;
-  animation: blinking 1.5s ease-in-out infinite alternate;
+  // animation: blinking 1.5s ease-in-out infinite alternate;
 }
 
-@keyframes blinking {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+// @keyframes blinking {
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
 
 /////
 
@@ -79,10 +76,6 @@
       margin-left: 40px;
     }
   }
-}
-
-.notdisplayed {
-  display: none;
 }
 
 .btn {

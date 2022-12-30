@@ -5,16 +5,9 @@
   width: 80%;
   text-align: center;
   margin: 52px auto;
-  @include mixin.desktop {
-    height: 10vh;
-  }
-}
 
-.h1 {
-  padding: 16px;
-  font-size: mixin.$font-size-h1;
-  @include mixin.desktop {
-    padding: 0;
+  h1 {
+    font-size: mixin.$font-size-h1;
   }
 }
 
@@ -111,6 +104,7 @@
 .socialMedia {
   text-align: center;
   margin: 32px auto;
+  padding-top: 36px;
   width: 75%;
   @include mixin.flexLayout;
   @include mixin.desktop {
@@ -121,6 +115,9 @@
   margin-left: 24px;
 }
 .socialMedia li:nth-child(3) {
+  margin-left: 24px;
+}
+.socialMedia li:nth-child(4) {
   margin-left: 24px;
 }
 .icon {
@@ -145,12 +142,12 @@
 
 .btn {
   @include mixin.mainBtn;
-  margin-top: 24px;
+  margin-top: 36px;
 }
 
 .profilePic {
-  width: 330px;
-  height: 350px;
+  width: 300px;
+  height: 320px;
   display: block;
   margin: 32px auto;
   justify-content: center;

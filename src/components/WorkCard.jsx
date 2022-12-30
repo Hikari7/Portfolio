@@ -50,11 +50,11 @@ function WorkCard({
                 <span>{tool3}</span>
               </div>
               <div className={site}>
-                <a href={github}>
-                  <DiGithubBadge size={52} color="#dca0a2" />
+                <a href={github} >
+                  <DiGithubBadge size={42} color="#dca0a2" />
                 </a>
                 <a href={link}>
-                  <FiExternalLink size={52} color="#dca0a2" />
+                  <FiExternalLink size={36} color="#dca0a2" />
                 </a>
               </div>
             </div>
