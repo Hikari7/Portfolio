@@ -58,7 +58,9 @@ const Works = () => {
                 tool2={"Tailwind"}
                 tool3={"Spoonacular API"}
                 github={"https://github.com/Hikari7/Cooking_helper_ReactApp"}
-                link={"https://meal-idea-generation-react-app.vercel.app/"}
+                link={
+                  "https://meal-idea-generation-react-es1qdgl8u-hikari7.vercel.app/"
+                }
                 image={cookHelper}
               />
             </div>
