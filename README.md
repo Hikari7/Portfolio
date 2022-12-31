@@ -4,7 +4,7 @@ My portfolio website built by React and Sass.
 
 ## Demo Link
 
-- [Hikari's portfolio](https://hikari-kobe-h39qmgtde-hikari7.vercel.app/)
+- [Hikari's portfolio](https://hikari-kobe.vercel.app/)
 
 ![The top image](./src/images/portfolioSite.jpg)
 
@@ -23,7 +23,7 @@ My portfolio website built by React and Sass.
 ## Challenging Part
 
 - Destructuring the work card component that part also needed solid knowledge of CSS positioning for the overlay was confusing at first.
-This part looks simple but I was able to apply the knowledge of fundamental CSS, DOM and props that a frontend developer needs.
+  This part looks simple but I was able to apply the knowledge of fundamental CSS, DOM and props that a frontend developer needs.
 
 ## Setup
 
