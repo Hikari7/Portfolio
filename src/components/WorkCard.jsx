@@ -39,6 +39,7 @@ function WorkCard({
           className={cardWrapper}
           onMouseEnter={(e) => showDetails(e)}
           onMouseLeave={(e) => hideDetails(e)}
+          role="presentation"
         >
           {showInfo && (
             <div className={overLay}>
