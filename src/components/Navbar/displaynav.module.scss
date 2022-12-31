@@ -29,9 +29,10 @@
     transition: 0.35s ease;
   }
 }
-
-.btn {
-  @include mixin.mainBtn;
+.accent {
+  background-color: mixin.$accent-color;
+  padding: 8px 12px;
+  border-radius: 8px;
 }
 
 .displayNav {

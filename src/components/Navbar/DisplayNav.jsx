@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { displayNav, header, btn, ul, li } from "./displaynav.module.scss";
+import { displayNav, header, accent, ul, li } from "./displaynav.module.scss";
 import resume from "../../images/Resume_HikariKobe.pdf";
 import { motion } from "framer-motion";
 const DisplayNav = () => {
@@ -98,8 +98,9 @@ const DisplayNav = () => {
           >
             <Link to="/contact">Contact</Link>
           </motion.li>
-          <motion.button
-            className={`${li} ${btn}`}
+          <motion.li
+            className={`${li} ${accent}`}
+            // className={li}
             initial={{
               opacity: 0,
               y: "-100%",
@@ -115,7 +116,7 @@ const DisplayNav = () => {
             }}
           >
             <a href={resume}>Resume</a>
-          </motion.button>
+          </motion.li>
         </ul>
       </nav>
     </>

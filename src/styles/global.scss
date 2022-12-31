@@ -2,16 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
 @import url("https://unpkg.com/ress/dist/ress.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
-$font-stack: "Forum", cursive;
-$second-font-stack: "Karla", sans-serif;
+// $font-stack: "Forum", cursive;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+// $font-stack: "Poppins", sans-serif;
+$font-stack: "Montserrat", sans-serif;
 
 $primary-color: #d5c6b9;
 $primary-bg-color: #fff;
 $primary-font-color: #3e3e3e;
 
 html {
-  font-family: 100% $font-stack;
+  font-family: $font-stack;
   color: $primary-font-color;
   font-size: 62.5%;
 

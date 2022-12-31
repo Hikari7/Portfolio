@@ -52,11 +52,11 @@ const skills = () => {
                     <p>CSS3</p>
                   </li>
                   <li>
-                    <SiJavascript size="40px" color="#dca0a2" />
+                    <SiJavascript size="40px" />
                     <p>JavaScript</p>
                   </li>
                   <li>
-                    <SiTypescript size="40px" />
+                    <SiTypescript size="40px" color="#dca0a2" />
                     <p>TypeScript</p>
                   </li>
                   <li>

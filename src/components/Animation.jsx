@@ -9,7 +9,7 @@ function AnimateInView({ children }) {
 
   const variants = {
     moved: { y: 0 },
-    initial: { y: 100 },
+    initial: { y: 50 },
   };
   useEffect(() => {
     if (inView) {

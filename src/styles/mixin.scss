@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
 @import url("https://unpkg.com/ress/dist/ress.min.css");
-
 @import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 //color
 $primary-color: #d5c6b9;
 $secondary-color: #fdf7f2;
@@ -14,14 +15,15 @@ $accent-bg-color: #ddcec0;
 
 $primary-font-color: #3e3e3e;
 
-$second-font-stack: "Karla", sans-serif;
+// $second-font-stack: "Karla", sans-serif;
+$second-font-stack: "Montserrat", sans-serif;
 
 //font-size
 
 $font-size-h1: 3.8rem;
 $font-size-h2: 3.2rem;
 $font-size-h3: 2rem;
-$font-size-p: 1.4rem;
+$font-size-p: 1.6rem;
 
 @mixin tablet {
   @media only screen and (min-width: 780px) {

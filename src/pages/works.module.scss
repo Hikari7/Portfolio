@@ -29,29 +29,19 @@
   font-size: mixin.$font-size-p;
   text-align: center;
   font-family: mixin.$second-font-stack;
-  // animation: blinking 1.5s ease-in-out infinite alternate;
 }
-
-// @keyframes blinking {
-//   0% {
-//     opacity: 0;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }
 
 /////
 
 .cardWrapper {
   height: 450px;
-  margin-top: 10%;
+  // margin-top: 10%;
 }
 
 .rowWrapper {
   @include mixin.tablet {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 52px;
 
     .cardWrapper {

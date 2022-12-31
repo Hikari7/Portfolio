@@ -38,6 +38,7 @@
   background-color: mixin.$accent-bg-color;
   border-radius: 8px;
   box-shadow: 20px 10px;
+  font-family: mixin.$second-font-stack;
 
   .h3 {
     padding: 12px 0;
@@ -59,7 +60,7 @@
 .detail {
   justify-content: center;
   width: 90%;
-  font-size: 1.8rem;
+  font-size: mixin.$font-size-p;
   word-break: break-word;
   margin: 24px auto;
   @include mixin.textStyles(none);
@@ -154,7 +155,7 @@
   position: relative;
   border-radius: 50%;
   @include mixin.desktop {
-    margin: 24px auto 12px;
+    margin: 48px auto;
   }
 }
 
