@@ -53,7 +53,9 @@ const Works = () => {
             <div className={work2}>
               <WorkCard
                 worktitle={"Cook Helper"}
-                details={"A recipe searching app which has grocery lists"}
+                details={
+                  "A recipe searching app which also provides a grocery list users can add, edit and delete lists"
+                }
                 tool={"React.js"}
                 tool2={"Tailwind"}
                 tool3={"Spoonacular API"}
@@ -63,7 +65,6 @@ const Works = () => {
                 }
                 image={cookHelper}
               />
-             
             </div>
           </div>
           <div className={rowWrapper}>

@@ -33,21 +33,15 @@
   z-index: 3;
   width: 65%;
   text-align: center;
-  @include mixin.tablet {
-    @include mixin.centering(35%);
-  }
-  @include mixin.desktop {
-    @include mixin.centering(35%);
-  }
 }
 .mainText h1 {
-  font-size: 5.5rem;
+  font-size: 4rem;
   @include mixin.tablet {
     font-size: 8rem;
   }
 }
 .mainText h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 400;
   @include mixin.tablet {
     font-size: 4.5rem;
@@ -56,7 +50,7 @@
 
 .btn {
   justify-content: center;
-  margin: 32px auto 0;
+  margin: 24px auto 0;
   @include mixin.mainBtn;
   z-index: 10;
 }
