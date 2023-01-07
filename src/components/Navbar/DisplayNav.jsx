@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "gatsby";
 import { displayNav, header, accent, ul, li } from "./displaynav.module.scss";
 import resume from "../../images/Resume_HikariKobe.pdf";
 import { motion } from "framer-motion";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
 const DisplayNav = () => {
   return (
     <>
@@ -21,9 +22,7 @@ const DisplayNav = () => {
               ease: "easeInOut",
             },
           }}
-        >
-          <Link to="/">HK</Link>
-        </motion.h1>
+        ></motion.h1>
 
         <ul className={ul}>
           <motion.li
@@ -42,7 +41,7 @@ const DisplayNav = () => {
               },
             }}
           >
-            <Link to="/works">Works</Link>
+            <AnchorLink href="#works">Works</AnchorLink>
           </motion.li>
           <motion.li
             className={li}
@@ -60,7 +59,7 @@ const DisplayNav = () => {
               },
             }}
           >
-            <Link to="/about">About</Link>
+            <AnchorLink href="#about">About</AnchorLink>
           </motion.li>
           <motion.li
             className={li}
@@ -78,7 +77,7 @@ const DisplayNav = () => {
               },
             }}
           >
-            <Link to="/skills">Skills</Link>
+            <AnchorLink href="#skills">Skills</AnchorLink>
           </motion.li>
           <motion.li
             className={li}
@@ -96,11 +95,10 @@ const DisplayNav = () => {
               },
             }}
           >
-            <Link to="/contact">Contact</Link>
+            <AnchorLink href="#contact">Contact</AnchorLink>
           </motion.li>
           <motion.li
             className={`${li} ${accent}`}
-            // className={li}
             initial={{
               opacity: 0,
               y: "-100%",

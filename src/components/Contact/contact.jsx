@@ -11,12 +11,12 @@ import {
 import { AiFillGithub } from "@react-icons/all-files/ai/AiFillGithub";
 import { AiFillLinkedin } from "@react-icons/all-files/ai/AiFillLinkedin";
 import { AiFillTwitterCircle } from "@react-icons/all-files/ai/AiFillTwitterCircle";
-import AnimateInView from "../components/Animation";
+import AnimateInView from "../Animation";
 
 const contact = () => {
   return (
     <>
-      <div className={container}>
+      <div className={container} id="contact">
         <div className={mainBg}>
           <div className={mainText}>
             <div className={title}>

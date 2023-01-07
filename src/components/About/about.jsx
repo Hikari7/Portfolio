@@ -20,14 +20,14 @@ import { AiFillGithub } from "@react-icons/all-files/ai/AiFillGithub";
 import { AiFillLinkedin } from "@react-icons/all-files/ai/AiFillLinkedin";
 import { AiFillTwitterCircle } from "@react-icons/all-files/ai/AiFillTwitterCircle";
 import { GrArticle } from "@react-icons/all-files/gr/GrArticle";
-import profile from "../images/portfolio.jpg";
-import resume from "../images/Resume_HikariKobe.pdf";
-import AnimateInView from "../components/Animation";
+import profile from "../../images/portfolio.jpg";
+import resume from "../../images/Resume_HikariKobe.pdf";
+import AnimateInView from "../Animation";
 
 const about = () => {
   return (
     <>
-      <div className={title}>
+      <div className={title} id="about">
         <h1>About Me</h1>
       </div>
       <div className={bg}>

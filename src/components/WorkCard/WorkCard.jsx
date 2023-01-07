@@ -9,7 +9,7 @@ import {
 } from "./workcard.module.scss";
 import { DiGithubBadge } from "@react-icons/all-files/di/DiGithubBadge";
 import { FiExternalLink } from "@react-icons/all-files/fi/FiExternalLink";
-import AnimateInView from "./Animation";
+import AnimateInView from "../Animation";
 function WorkCard({
   worktitle,
   details,
@@ -40,6 +40,7 @@ function WorkCard({
           onMouseEnter={(e) => showDetails(e)}
           onMouseLeave={(e) => hideDetails(e)}
           role="presentation"
+          id="works"
         >
           {showInfo && (
             <div className={overLay}>

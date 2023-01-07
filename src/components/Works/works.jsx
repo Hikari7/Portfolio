@@ -13,13 +13,13 @@ import {
   bg,
 } from "./works.module.scss";
 
-import workoutLog from "../images/workout-tracker.jpg";
-import sleepTight from "../images/sleep-tight.jpg";
-import cookHelper from "../images/cooking-helper.jpg";
-import oatmealEcSite from "../images/oatmeal-ecsite.jpg";
-import commitFit from "../images/commit-fit.jpg";
-import portfolio from "../images/portfolioSite.jpg";
-import WorkCard from "../components/WorkCard";
+import workoutLog from "../../images/workout-tracker.jpg";
+import sleepTight from "../../images/sleep-tight.jpg";
+import cookHelper from "../../images/cooking-helper.jpg";
+import oatmealEcSite from "../../images/oatmeal-ecsite.jpg";
+import commitFit from "../../images/commit-fit.jpg";
+import portfolio from "../../images/portfolioSite.jpg";
+import WorkCard from "../WorkCard/WorkCard";
 
 const Works = () => {
   return (

@@ -8,7 +8,6 @@
 
 .li {
   font-size: mixin.$font-size-h3;
-  margin-left: 1.6rem;
   text-align: center;
   align-items: center;
   vertical-align: middle;
@@ -37,6 +36,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row-reverse;
 }
 
 .mobileBg {
@@ -45,7 +45,7 @@
   top: 10vh;
   right: 0;
   width: 100%;
-  height: 60%;
+  height: 50%;
   z-index: 15;
 }
 

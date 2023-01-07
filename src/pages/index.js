@@ -1,6 +1,5 @@
 import * as React from "react";
-import Layout from "../components/Layout";
-// import { Link } from "gatsby";
+import Layout from "../components/Layout/Layout";
 import {
   mainText,
   btn,
@@ -12,11 +11,12 @@ import {
   container,
 } from "../styles/home.module.scss";
 import { motion } from "framer-motion";
-import Works from "./works";
-import About from "./about";
-import Skills from "./skills";
-import Contact from "./contact";
+import Works from "../components/Works/works";
+import About from "../components/About/about";
+import Skills from "../components/Skills/skills";
+import Contact from "../components/Contact/contact";
 import { GrDown } from "@react-icons/all-files/gr/GrDown";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export default function Home() {
   return (
@@ -102,7 +102,9 @@ export default function Home() {
           }}
         >
           <span className={downArrow}>
-            <GrDown size="40px" />
+            <AnchorLink href="#works">
+              <GrDown size="40px" />
+            </AnchorLink>
           </span>
         </motion.div>
       </div>

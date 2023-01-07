@@ -24,14 +24,14 @@ import { SiFirebase } from "@react-icons/all-files/si/SiFirebase";
 import { DiMongodb } from "@react-icons/all-files/di/DiMongodb";
 import { DiGithubBadge } from "@react-icons/all-files/di/DiGithubBadge";
 import { FaFigma } from "@react-icons/all-files/fa/FaFigma";
-import mui from "../../src/images/material-ui.svg";
-import styledComponents from "../../src/images/styled-components.svg";
-import AnimateInView from "../components/Animation";
+import mui from "../../images/material-ui.svg";
+import styledComponents from "../../images/styled-components.svg";
+import AnimateInView from "../Animation";
 
 const skills = () => {
   return (
     <>
-      <div className={title}>
+      <div className={title} id="skills">
         <h1 className={h1}>Skills</h1>
       </div>
       <div className={bg}>

@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "./Navbar/Navbar";
-import Footer from "./Footer";
-import "../styles/global.scss";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
+import "../../styles/global.scss";
 
 const Layout = ({ children }) => {
   return (
