@@ -1,8 +1,16 @@
 import React from "react";
-import { displayNav, header, accent, ul, li } from "./displaynav.module.scss";
+import {
+  displayNav,
+  header,
+  accent,
+  ul,
+  li,
+  logo,
+} from "./displaynav.module.scss";
 import resume from "../../images/Resume_HikariKobe.pdf";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import myLogo from "../../images/logo.jpg";
 
 const DisplayNav = () => {
   return (
@@ -22,7 +30,9 @@ const DisplayNav = () => {
               ease: "easeInOut",
             },
           }}
-        ></motion.h1>
+        >
+          <img src={myLogo} alt="logo" className={logo} />
+        </motion.h1>
 
         <ul className={ul}>
           <motion.li

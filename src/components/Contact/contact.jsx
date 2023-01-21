@@ -7,7 +7,7 @@ import {
   socialMedia,
   icon,
   contactBtn,
-} from "./contact.module.scss";
+} from "../Contact/contact.module.scss";
 import { AiFillGithub } from "@react-icons/all-files/ai/AiFillGithub";
 import { AiFillLinkedin } from "@react-icons/all-files/ai/AiFillLinkedin";
 import { AiFillTwitterCircle } from "@react-icons/all-files/ai/AiFillTwitterCircle";

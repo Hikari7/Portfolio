@@ -1,10 +1,19 @@
 import { Link } from "gatsby";
 import React, { useState } from "react";
-import { mobileBg, ul, li, btn, navEl, mobile } from "./mobilenav.module.scss";
+import {
+  mobileBg,
+  ul,
+  li,
+  btn,
+  navEl,
+  mobile,
+  logo,
+} from "./mobilenav.module.scss";
 import { motion } from "framer-motion";
 import Hamburger from "hamburger-react";
 import resume from "../../images/Resume_HikariKobe.pdf";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import myLogo from "../../images/logo.jpg";
 
 const MobileNav = () => {
   const [open, setOpen] = useState(false);
@@ -17,6 +26,7 @@ const MobileNav = () => {
       <div className={mobile}>
         <nav className={navEl}>
           <Hamburger toggled={open} toggle={setOpen} />
+          <img src={myLogo} alt="logo" className={logo} />
         </nav>
         {open && (
           <motion.div
