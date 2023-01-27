@@ -7,12 +7,21 @@
   margin: 52px auto;
 }
 
+.subTitle {
+  padding: 32px;
+  font-size: mixin.$font-size-p;
+  text-align: center;
+  font-family: mixin.$second-font-stack;
+}
+
 .h1 {
   padding: 16px;
   font-size: mixin.$font-size-h1;
 }
 
 .bg {
+  padding-top: 56px;
+  padding-bottom: 56px;
   background-color: mixin.$secondary-bg-color;
 }
 
@@ -89,6 +98,12 @@
     p {
       padding: 6px 0;
       font-family: mixin.$second-font-stack;
+
+    }
+    span {
+      color: #dca0a2;
+      font-size: 25px;
+      vertical-align: middle;
     }
   }
 }

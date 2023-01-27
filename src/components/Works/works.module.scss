@@ -35,12 +35,10 @@
 
 .cardWrapper {
   height: 450px;
-
-  // margin-top: 10%;
 }
 
 .rowWrapper {
-  @include mixin.tablet {
+  @include mixin.desktop {
     display: flex;
     justify-content: center;
     margin-top: 52px;
@@ -55,10 +53,13 @@
       margin-left: 40px;
     }
     .work3 {
-      margin-right: 40px;
+      // margin-right: 40px;
+      width: 45%;
+      margin-right: 3%;
     }
     .work4 {
-      min-width: 60%;
+      width: 52%;
+      // min-width: 60%;
     }
     .work5 {
       min-width: 60%;

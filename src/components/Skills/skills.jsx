@@ -8,6 +8,7 @@ import {
   skillsList,
   stripe,
   bg,
+  subTitle,
 } from "./skills.module.scss";
 import { AiFillHtml5 } from "@react-icons/all-files/ai/AiFillHtml5";
 import { DiCss3 } from "@react-icons/all-files/di/DiCss3";
@@ -24,6 +25,7 @@ import { SiFirebase } from "@react-icons/all-files/si/SiFirebase";
 import { DiMongodb } from "@react-icons/all-files/di/DiMongodb";
 import { DiGithubBadge } from "@react-icons/all-files/di/DiGithubBadge";
 import { FaFigma } from "@react-icons/all-files/fa/FaFigma";
+import { WiStars } from "@react-icons/all-files/Wi/WiStars";
 import mui from "../../images/material-ui.svg";
 import styledComponents from "../../images/styled-components.svg";
 import AnimateInView from "../Animation";
@@ -35,6 +37,10 @@ const skills = () => {
         <h1 className={h1}>Skills</h1>
       </div>
       <div className={bg}>
+        <h2 className={subTitle}>
+          TypeScript and React are my best friends!
+          <br></br>I use the below skills to bring your products to life.
+        </h2>
         <div className={container}>
           <div>
             <h3 className={headline}>
@@ -57,7 +63,16 @@ const skills = () => {
                   </li>
                   <li>
                     <SiTypescript size="40px" color="#dca0a2" />
-                    <p>TypeScript</p>
+
+                    <p>
+                      <span>
+                        <WiStars />
+                      </span>
+                      TypeScript
+                      <span>
+                        <WiStars />
+                      </span>
+                    </p>
                   </li>
                   <li>
                     <DiSass size="40px" />
@@ -75,8 +90,16 @@ const skills = () => {
               <div className={wrapper}>
                 <ul className={skillsList}>
                   <li>
-                    <FaReact size="40px" color="#dca0a2" />
-                    <p>React</p>
+                    <FaReact size="45px" color="#dca0a2" />
+                    <p>
+                      <span>
+                        <WiStars />
+                      </span>
+                      React
+                      <span>
+                        <WiStars />
+                      </span>
+                    </p>
                   </li>
                   <li>
                     <SiRedux size="40px" />
