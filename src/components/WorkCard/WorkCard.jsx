@@ -6,6 +6,7 @@ import {
   tools,
   site,
   cardWrapper,
+  hover,
 } from "./workcard.module.scss";
 import { DiGithubBadge } from "@react-icons/all-files/di/DiGithubBadge";
 import { FiExternalLink } from "@react-icons/all-files/fi/FiExternalLink";
@@ -36,7 +37,7 @@ function WorkCard({
     <>
       <AnimateInView>
         <div
-          className={cardWrapper}
+          className={`${cardWrapper} ${showInfo ? hover : ""}`}
           onMouseEnter={(e) => showDetails(e)}
           onMouseLeave={(e) => hideDetails(e)}
           role="presentation"
