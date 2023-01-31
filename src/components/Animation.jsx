@@ -12,7 +12,7 @@ function AnimateInView({ children }) {
         style={{
           transform: isInView ? "none" : "translateY(300px)",
           opacity: isInView ? 1 : 0,
-          transition: "all 2s ",
+          transition: "all 2.3s ",
         }}
       >
         {children}
