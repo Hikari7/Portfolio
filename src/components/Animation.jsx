@@ -1,35 +1,23 @@
 import * as React from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 
 function AnimateInView({ children }) {
-  const controls = useAnimation();
-  const [ref, inView] = useInView();
-
-  const variants = {
-    moved: { y: 0 },
-    initial: { y: 50 },
-  };
-  useEffect(() => {
-    if (inView) {
-      controls.start("moved");
-    } else {
-      controls.stop();
-      controls.set("initial");
-    }
-  }, [controls, inView]);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   return (
-    <motion.div
-      ref={ref}
-      animate={controls}
-      initial={false}
-      transition={{ duration: 1 }}
-      variants={variants}
-    >
-      {children}
-    </motion.div>
+    <div ref={ref}>
+      <span
+        style={{
+          transform: isInView ? "none" : "translateY(300px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 2s ",
+        }}
+      >
+        {children}
+      </span>
+    </div>
   );
 }
 
