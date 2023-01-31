@@ -7,7 +7,7 @@ function AnimateInView({ children }) {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div ref={ref}>
+    <dnpiv ref={ref}>
       <span
         style={{
           transform: isInView ? "none" : "translateY(300px)",
@@ -17,7 +17,7 @@ function AnimateInView({ children }) {
       >
         {children}
       </span>
-    </div>
+    </dnpiv>
   );
 }
 
