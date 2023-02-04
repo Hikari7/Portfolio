@@ -90,3 +90,15 @@
     }
   }
 }
+
+.desktop {
+  @include mixin.tablet-temp {
+    display: none;
+  }
+}
+
+.tablet {
+  @include mixin.desktop {
+    display: none;
+  }
+}

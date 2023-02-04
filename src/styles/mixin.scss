@@ -30,6 +30,11 @@ $font-size-p: 1.6rem;
     @content;
   }
 }
+@mixin tablet-temp {
+  @media only screen and (max-width: 780px) {
+    @content;
+  }
+}
 
 @mixin desktop {
   @media only screen and (min-width: 1080px) {
