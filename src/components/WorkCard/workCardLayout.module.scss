@@ -1,0 +1,19 @@
+@use "../../styles/mixin.scss" as mixin;
+
+// .display {
+//   @include mixin.tablet-temp {
+//     display: block;
+//   }
+// }
+
+.mobile {
+  @include mixin.desktop {
+    display: none;
+  }
+}
+
+.desktop {
+  @include mixin.desktop {
+    display: none;
+  }
+}

@@ -7,13 +7,13 @@ import {
   site,
   cardWrapper,
   hover,
-  desktop,
-
-} from "./workcard.module.scss";
+  tablet,
+} from "./workCardMobile.module.scss";
 import { DiGithubBadge } from "@react-icons/all-files/di/DiGithubBadge";
 import { FiExternalLink } from "@react-icons/all-files/fi/FiExternalLink";
+import { GrClose } from "@react-icons/all-files/Gr/GrClose";
 import AnimateInView from "../Animation";
-function WorkCard({
+function WorkCardMobile({
   worktitle,
   details,
   tool,
@@ -39,15 +39,15 @@ function WorkCard({
     <>
       <AnimateInView>
         <div
-          className={`${cardWrapper} ${showInfo ? hover : ""} ${desktop}`}
+          className={`${cardWrapper} ${showInfo ? hover : ""}  ${tablet}`}
           role="presentation"
           id="works"
-          onMouseEnter={(e) => showDetails(e)}
-          onMouseLeave={(e) => hideDetails(e)}
+          onClick={(e) => showDetails(e)}
         >
           {showInfo && (
             <div className={overLay}>
               <div className={content}>
+                <GrClose />
                 <h1>{worktitle}</h1>
                 <p>{details}</p>
                 <div className={tools}>
@@ -75,4 +75,4 @@ function WorkCard({
   );
 }
 
-export default WorkCard;
+export default WorkCardMobile;

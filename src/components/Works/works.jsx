@@ -19,7 +19,7 @@ import cookHelper from "../../images/cooking-helper.jpg";
 import oatmealEcSite from "../../images/oatmeal-ecsite.jpg";
 import commitFit from "../../images/commit-fit.jpg";
 import portfolio from "../../images/portfolioSite.jpg";
-import WorkCard from "../WorkCard/WorkCard";
+import WorkCardLayout from "../WorkCard/WorkCard";
 
 const Works = () => {
   return (
@@ -37,7 +37,7 @@ const Works = () => {
         <div className={container}>
           <div className={rowWrapper}>
             <div className={work1}>
-              <WorkCard
+              <WorkCardLayout
                 worktitle={"Workout Tracker"}
                 details={
                   "A workout tracker recording app provides the store the user information and their posts."
@@ -51,7 +51,7 @@ const Works = () => {
               />
             </div>
             <div className={work2}>
-              <WorkCard
+              <WorkCardLayout
                 worktitle={"Cook Helper"}
                 details={
                   "A recipe searching app which also provides a grocery list users can add, edit and delete lists"
@@ -69,7 +69,7 @@ const Works = () => {
           </div>
           <div className={rowWrapper}>
             <div className={work3}>
-              <WorkCard
+              <WorkCardLayout
                 worktitle={"Oatmeal EC Site"}
                 details={
                   "An Ecommerce website using vanilla JS and the Local Storage"
@@ -83,7 +83,7 @@ const Works = () => {
               />
             </div>
             <div className={work4}>
-              <WorkCard
+              <WorkCardLayout
                 worktitle={"Sleep Tight"}
                 details={"A web app only plays BGM-related relaxing sounds"}
                 tool={"React.js"}
@@ -97,7 +97,7 @@ const Works = () => {
           </div>
           <div className={rowWrapper}>
             <div className={work5}>
-              <WorkCard
+              <WorkCardLayout
                 worktitle={"Portfolio"}
                 details={"My portfolio"}
                 tool={"React.js"}
@@ -109,7 +109,7 @@ const Works = () => {
               />
             </div>
             <div className={work6}>
-              <WorkCard
+              <WorkCardLayout
                 worktitle={"Commit fit"}
                 details={
                   "A gym landing page website which is built with SASS and vanilla JavaScript."
