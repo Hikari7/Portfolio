@@ -7,17 +7,19 @@ function AnimateInView({ children }) {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div ref={ref}>
-      <span
-        style={{
-          transform: isInView ? "none" : "translateY(300px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 2s ",
-        }}
-      >
-        {children}
-      </span>
-    </div>
+    <>
+      <div ref={ref}>
+        <span
+          style={{
+            transform: isInView ? "none" : "translateY(300px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 2.3s ",
+          }}
+        >
+          {children}
+        </span>
+      </div>
+    </>
   );
 }
 
