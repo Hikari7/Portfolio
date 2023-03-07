@@ -10,13 +10,13 @@ import {
 import resume from "../../images/Resume_HikariKobe.pdf";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import myLogo from "../../images/logo.jpg";
+import myLogo from "../../images/logo.png";
 
 const DisplayNav = () => {
   return (
     <>
       <nav className={`${header} ${displayNav}`}>
-        <motion.h1
+        <motion.li
           initial={{
             opacity: 0,
             y: "-100%",
@@ -32,7 +32,7 @@ const DisplayNav = () => {
           }}
         >
           <img src={myLogo} alt="logo" className={logo} />
-        </motion.h1>
+        </motion.li>
 
         <ul className={ul}>
           <motion.li

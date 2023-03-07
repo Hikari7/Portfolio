@@ -45,7 +45,7 @@
   justify-content: center;
   width: 160px;
   text-align: center;
-  margin: 32px auto 6px;
+  margin: 3px auto 6px;
   border-radius: 8px;
   padding: 0px 8px;
 
@@ -53,7 +53,7 @@
   font-size: mixin.$font-size-h3;
 
   @include mixin.desktop {
-    padding: 36px 8px;
+    padding: 5px 8px;
   }
 }
 

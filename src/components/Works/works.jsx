@@ -17,7 +17,7 @@ import workoutLog from "../../images/workout-tracker.jpg";
 import sleepTight from "../../images/sleep-tight.jpg";
 import cookHelper from "../../images/cooking-helper.jpg";
 import oatmealEcSite from "../../images/oatmeal-ecsite.jpg";
-import commitFit from "../../images/commit-fit.jpg";
+import mernNoteApp from "../../images/mern_noteApp.jpg";
 import portfolio from "../../images/portfolioSite.jpg";
 import WorkCardLayout from "../WorkCard/WorkCard";
 
@@ -38,6 +38,18 @@ const Works = () => {
           <div className={rowWrapper}>
             <div className={work1}>
               <WorkCardLayout
+                worktitle={"MERN Note App"}
+                details={"A note taking CRUD app with MERN stack."}
+                tool={"React.js"}
+                tool2={"Node.js"}
+                tool3={"Mongo DB"}
+                github={"https://github.com/Hikari7/MERN_NoteApp"}
+                link={"https://mern-note-app-client.vercel.app/"}
+                image={mernNoteApp}
+              />
+            </div>
+            <div className={work2}>
+              <WorkCardLayout
                 worktitle={"Workout Tracker"}
                 details={
                   "A workout tracker recording app provides the store the user information and their posts."
@@ -50,7 +62,9 @@ const Works = () => {
                 image={workoutLog}
               />
             </div>
-            <div className={work2}>
+          </div>
+          <div className={rowWrapper}>
+            <div className={work3}>
               <WorkCardLayout
                 worktitle={"Cook Helper"}
                 details={
@@ -66,9 +80,7 @@ const Works = () => {
                 image={cookHelper}
               />
             </div>
-          </div>
-          <div className={rowWrapper}>
-            <div className={work3}>
+            <div className={work4}>
               <WorkCardLayout
                 worktitle={"Oatmeal EC Site"}
                 details={
@@ -82,7 +94,9 @@ const Works = () => {
                 image={oatmealEcSite}
               />
             </div>
-            <div className={work4}>
+          </div>
+          <div className={rowWrapper}>
+            <div className={work5}>
               <WorkCardLayout
                 worktitle={"Sleep Tight"}
                 details={"A web app only plays BGM-related relaxing sounds"}
@@ -94,9 +108,7 @@ const Works = () => {
                 image={sleepTight}
               />
             </div>
-          </div>
-          <div className={rowWrapper}>
-            <div className={work5}>
+            <div className={work6}>
               <WorkCardLayout
                 worktitle={"Portfolio"}
                 details={"My portfolio"}
@@ -106,20 +118,6 @@ const Works = () => {
                 github={"https://github.com/Hikari7/portfolio"}
                 link={"hikari-kobe.vercel.app"}
                 image={portfolio}
-              />
-            </div>
-            <div className={work6}>
-              <WorkCardLayout
-                worktitle={"Commit fit"}
-                details={
-                  "A gym landing page website which is built with SASS and vanilla JavaScript."
-                }
-                tool={"JavaScript"}
-                tool2={"Sass"}
-                tool3={"HTML"}
-                github={"https://github.com/Hikari7/Commit-fit_LandingPage"}
-                link={"https://commit-fit.netlify.app/"}
-                image={commitFit}
               />
             </div>
           </div>

@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 import Hamburger from "hamburger-react";
 import resume from "../../images/Resume_HikariKobe.pdf";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import myLogo from "../../images/logo.jpg";
+import myLogo from "../../images/logo.png";
 
 const MobileNav = () => {
   const [open, setOpen] = useState(false);
