@@ -50,22 +50,6 @@ const Works = () => {
             </div>
             <div className={work2}>
               <WorkCardLayout
-                worktitle={"Workout Tracker"}
-                details={
-                  "A workout tracker recording app provides the store the user information and their posts."
-                }
-                tool={"React.js"}
-                tool2={"FireBase"}
-                tool3={"MUI"}
-                github={"https://github.com/Hikari7/Workout_tracking_App"}
-                link={"https://workout-tracking-app.vercel.app/"}
-                image={workoutLog}
-              />
-            </div>
-          </div>
-          <div className={rowWrapper}>
-            <div className={work3}>
-              <WorkCardLayout
                 worktitle={"Cook Helper"}
                 details={
                   "A recipe searching app which also provides a grocery list users can add, edit and delete lists"
@@ -80,7 +64,9 @@ const Works = () => {
                 image={cookHelper}
               />
             </div>
-            <div className={work4}>
+          </div>
+          <div className={rowWrapper}>
+            <div className={work3}>
               <WorkCardLayout
                 worktitle={"Oatmeal EC Site"}
                 details={
@@ -92,6 +78,20 @@ const Works = () => {
                 github={"https://github.com/Hikari7/YabeeOatmeal_EC-Website"}
                 link={"https://oatmeal-ec-site.netlify.app/"}
                 image={oatmealEcSite}
+              />
+            </div>
+            <div className={work4}>
+              <WorkCardLayout
+                worktitle={"Workout Tracker"}
+                details={
+                  "A workout tracker recording app provides the store the user information and their posts."
+                }
+                tool={"React.js"}
+                tool2={"FireBase"}
+                tool3={"MUI"}
+                github={"https://github.com/Hikari7/Workout_tracking_App"}
+                link={"https://workout-tracking-app.vercel.app/"}
+                image={workoutLog}
               />
             </div>
           </div>
