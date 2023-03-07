@@ -25,7 +25,8 @@ import { SiFirebase } from "@react-icons/all-files/si/SiFirebase";
 import { DiMongodb } from "@react-icons/all-files/di/DiMongodb";
 import { DiGithubBadge } from "@react-icons/all-files/di/DiGithubBadge";
 import { FaFigma } from "@react-icons/all-files/fa/FaFigma";
-import { AiFillHeart } from "@react-icons/all-files/Ai/AiFillHeart";
+// import { AiFillHeart } from "@react-icons/all-files/Ai/AiFillHeart";
+import { AiFillStar } from "@react-icons/all-files/Ai/AiFillStar";
 import mui from "../../images/material-ui.svg";
 import styledComponents from "../../images/styled-components.svg";
 import AnimateInView from "../Animation";
@@ -53,11 +54,11 @@ const skills = () => {
                     <SiTypescript size="40px" color="#dca0a2" />
                     <p>
                       <span>
-                        <AiFillHeart />
+                        <AiFillStar />
                       </span>
                       TypeScript
                       <span>
-                        <AiFillHeart />
+                        <AiFillStar />
                       </span>
                     </p>
                   </li>
@@ -93,11 +94,11 @@ const skills = () => {
                     <FaReact size="45px" color="#dca0a2" />
                     <p>
                       <span>
-                        <AiFillHeart />
+                        <AiFillStar />
                       </span>
                       React
                       <span>
-                        <AiFillHeart />
+                        <AiFillStar />
                       </span>
                     </p>
                   </li>
