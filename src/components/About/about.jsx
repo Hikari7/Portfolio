@@ -44,24 +44,23 @@ const about = () => {
             <AnimateInView>
               <ul className={detail}>
                 <li>
-                  Love to put stylings for{" "}
-                  <span>a user-friendly application</span>
-                </li>
-                <li>
-                  <span>Have strong communication skills</span> to have worked a
-                  customer service as a technical support specialist for 3 years
-                  and trained more than 130 employees.
-                </li>
-                <li>
                   <span>
-                    “If you want to make progress on something, be consistent”
+                    Skilled in creating user-friendly application designs
                   </span>{" "}
-                  is my growth mindset
+                  with a passion for adding style and creativity.
                 </li>
                 <li>
-                  Spend most of my free time working out, travelling and
-                  watching sitcoms <br></br>(
-                  <span>"The office" is the best show ever!</span>)
+                  Excellent <span>communication abilities</span> developed
+                  through 3 years of experience as a technical support
+                  specialist, having trained over 130 employees
+                </li>
+                <li>
+                  Strongly believe in <span> the power of consistency </span>as
+                  a growth mindset is my growth mindset
+                </li>
+                <li>
+                  Passionate about <span>fitness, travel, and sitcoms</span>
+                  (with "The Office" being my all-time favorite show!)
                 </li>
               </ul>
             </AnimateInView>
@@ -83,11 +82,11 @@ const about = () => {
               </div>
               <div className={`${detail} ${tweet}`}>
                 <p className={tweet}>
-                  You can check how I love learning tech skills consistently
-                  through
+                  Check out{" "}
                   <span>
-                    <a href="https://twitter.com/hk_Vancouver"> my Twitter!</a>
-                  </span>
+                    <a href="https://twitter.com/hk_Vancouver"> my Twitter</a>
+                  </span>{" "}
+                  to see my love for consistently learning new tech skills!
                 </p>
               </div>
               <div className={socialMedia}>
