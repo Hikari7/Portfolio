@@ -55,12 +55,12 @@ const about = () => {
                   specialist, having trained over 130 employees
                 </li>
                 <li>
-                  Strongly believe in <span> the power of consistency </span>as
-                  a growth mindset is my growth mindset
+                  Firmly believing in <span>the power of consistency</span> is
+                  my growth mindset
                 </li>
                 <li>
                   Passionate about <span>fitness, travel, and sitcoms</span>
-                  (with "The Office" being my all-time favorite show!)
+                  (with "The Office" being my all-time favourite show!)
                 </li>
               </ul>
             </AnimateInView>
