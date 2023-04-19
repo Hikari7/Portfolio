@@ -46,7 +46,7 @@ const Works = () => {
                 tool2={"Redux toolkit"}
                 tool3={"Tailwind.css"}
                 github={"https://github.com/Hikari7/Appointly"}
-                link={"https://mern-note-app-client.vercel.app/"}
+                link={"https://appointly-mtg.vercel.app/"}
                 image={appointly}
               />
             </div>
