@@ -9,9 +9,10 @@ const Layout = ({ children }) => (
     <Helmet
       title="Hikari | Portfolio"
       meta={[
-        { name: "description", content: "Hikari Kobe | Portfolio website" },
+        { name: "description", content: "I'm Hikari Kobe, a front-end developer based in Vancouver, Canada." },
         { name: "keywords", content: "Frontend developer, designer, React" },
         { name: "author", content: "Hikari Kobe" },
+        { name: "title", content: "Hikari Kobe | Web developer" },
       ]}
     />
     <Navbar />
