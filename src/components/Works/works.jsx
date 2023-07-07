@@ -16,7 +16,7 @@ import {
 import appointly from "../../images/appointly.jpg";
 import workoutLog from "../../images/workout-tracker.jpg";
 import sleepTight from "../../images/sleep-tight.jpg";
-import cookHelper from "../../images/cooking-helper.jpg";
+import forographerAi from "../../images/fotographerai.jpg";
 import mernNoteApp from "../../images/mern_noteApp.jpg";
 import portfolio from "../../images/portfolioSite.jpg";
 import WorkCardLayout from "../WorkCard/WorkCard";
@@ -52,6 +52,22 @@ const Works = () => {
             </div>
             <div className={work2}>
               <WorkCardLayout
+                worktitle={"[Job] Owned media website"}
+                details={
+                  "A Freelance Job: Created both the top page and article page, from design to development."
+                }
+                tool={"React.js"}
+                tool2={"TypeScript"}
+                tool3={"Scss"}
+                github={"https://fotographer.ai/case"}
+                link={"https://fotographer.ai/case"}
+                image={forographerAi}
+              />
+            </div>
+          </div>
+          <div className={rowWrapper}>
+            <div className={work3}>
+              <WorkCardLayout
                 worktitle={"MERN Note App"}
                 details={"A note taking CRUD app with MERN stack."}
                 tool={"MERN stack"}
@@ -60,22 +76,6 @@ const Works = () => {
                 github={"https://github.com/Hikari7/MERN_NoteApp"}
                 link={"https://mern-note-app-client.vercel.app/"}
                 image={mernNoteApp}
-              />
-            </div>
-          </div>
-          <div className={rowWrapper}>
-            <div className={work3}>
-              <WorkCardLayout
-                worktitle={"Portfolio"}
-                details={
-                  "My portfolio styled by CSS modules and designed with Figma"
-                }
-                tool={"React.js"}
-                tool2={"Sass"}
-                tool3={"Framer-motion"}
-                github={"https://github.com/Hikari7/portfolio"}
-                link={"hikari-kobe.vercel.app"}
-                image={portfolio}
               />
             </div>
             <div className={work4}>
@@ -108,18 +108,16 @@ const Works = () => {
             </div>
             <div className={work6}>
               <WorkCardLayout
-                worktitle={"Cook Helper"}
+                worktitle={"Portfolio"}
                 details={
-                  "A recipe searching app which also provides a grocery list users can add, edit and delete lists"
+                  "My portfolio styled by CSS modules and designed with Figma"
                 }
                 tool={"React.js"}
-                tool2={"Tailwind"}
-                tool3={"Spoonacular API"}
-                github={"https://github.com/Hikari7/Cooking_helper_ReactApp"}
-                link={
-                  "https://meal-idea-generation-react-es1qdgl8u-hikari7.vercel.app/"
-                }
-                image={cookHelper}
+                tool2={"Sass"}
+                tool3={"Framer-motion"}
+                github={"https://github.com/Hikari7/portfolio"}
+                link={"hikari-kobe.vercel.app"}
+                image={portfolio}
               />
             </div>
           </div>

@@ -17,15 +17,14 @@ import { SiTypescript } from "@react-icons/all-files/si/SiTypescript";
 import { DiSass } from "@react-icons/all-files/di/DiSass";
 import { FaReact } from "@react-icons/all-files/fa/FaReact";
 import { SiRedux } from "@react-icons/all-files/si/SiRedux";
-import { FaNodeJs } from "@react-icons/all-files/fa/FaNodeJs";
 import { SiTailwindcss } from "@react-icons/all-files/si/SiTailwindcss";
-import { SiGatsby } from "@react-icons/all-files/si/SiGatsby";
 import { FaBootstrap } from "@react-icons/all-files/fa/FaBootstrap";
 import { SiFirebase } from "@react-icons/all-files/si/SiFirebase";
 import { DiMongodb } from "@react-icons/all-files/di/DiMongodb";
 import { DiGithubBadge } from "@react-icons/all-files/di/DiGithubBadge";
 import { FaFigma } from "@react-icons/all-files/fa/FaFigma";
 import { FaHeart } from "@react-icons/all-files/fa/FaHeart";
+import nextjs from "../../images/nextjs.svg";
 import mui from "../../images/material-ui.svg";
 import styledComponents from "../../images/styled-components.svg";
 import AnimateInView from "../Animation";
@@ -135,28 +134,20 @@ const skills = () => {
               <div className={wrapper}>
                 <ul className={skillsList}>
                   <li>
-                    <FaNodeJs size="40px" />
-                    <p>Node.js</p>
+                    <FaFigma size="40px" />
+                    <p>Figma</p>
                   </li>
                   <li>
-                    <SiFirebase size="40px" />
-                    <p>Firebase</p>
-                  </li>
-                  <li>
-                    <SiGatsby size="40px" />
-                    <p>Gatsby</p>
-                  </li>
-                  <li>
-                    <DiMongodb size="40px" />
-                    <p>MongoDB</p>
+                    <img src={nextjs} alt="next.js" />
+                    <p>Next.js</p>
                   </li>
                   <li>
                     <DiGithubBadge size="40px" />
                     <p>Github</p>
                   </li>
                   <li>
-                    <FaFigma size="40px" />
-                    <p>Figma</p>
+                    <SiFirebase size="40px" />
+                    <p>Firebase</p>
                   </li>
                 </ul>
               </div>
