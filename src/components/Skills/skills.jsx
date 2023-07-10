@@ -20,7 +20,6 @@ import { SiRedux } from "@react-icons/all-files/si/SiRedux";
 import { SiTailwindcss } from "@react-icons/all-files/si/SiTailwindcss";
 import { FaBootstrap } from "@react-icons/all-files/fa/FaBootstrap";
 import { SiFirebase } from "@react-icons/all-files/si/SiFirebase";
-import { DiMongodb } from "@react-icons/all-files/di/DiMongodb";
 import { DiGithubBadge } from "@react-icons/all-files/di/DiGithubBadge";
 import { FaFigma } from "@react-icons/all-files/fa/FaFigma";
 import { FaHeart } from "@react-icons/all-files/fa/FaHeart";
