@@ -35,7 +35,7 @@ const about = () => {
           <div className={leftPart}>
             <main className={main}>
               <p className={h3}>
-                A Front-End Developer <br></br>specialized <span>React</span>
+                A Front-End Developer <br></br>specialized <span>React.js</span>
               </p>
             </main>
             <AnimateInView>
